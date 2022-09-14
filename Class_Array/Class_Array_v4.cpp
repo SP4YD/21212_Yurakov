@@ -11,7 +11,7 @@ public:
         arr = (int*)malloc (capacity * sizeof (*arr));
     }
     Array (size_t initial_capacity)
-        : capacity (initial_capacity) {
+        : capacity (initial_capacity > 0 ? initial_capacity : defaultCapacity) {
         arr = (int*)malloc (capacity * sizeof (*arr));
     }
     Array (const Array& copy) {
@@ -33,7 +33,7 @@ public:
             capacity *= 2;
             int* tmp = (int*)realloc (arr, capacity * sizeof (*arr));
             if (tmp == NULL) {
-                cout << "Error";
+                cout << "Error: memory allocation" << endl;
                 return;
             }
             arr = tmp;
@@ -43,11 +43,20 @@ public:
     void insert (unsigned int pos, int value) {
         pos += 1;
         if (pos > size + 1) {
-            cout << "Error: out of range" << endl;
+            cout << "Error: out of range (insert)" << endl;
         } else {
             if (pos == size + 1) {
                 push_back (value);
             } else {
+                if (size == capacity) {
+                    capacity *= 2;
+                    int* tmp = (int*)realloc (arr, capacity * sizeof (*arr));
+                    if (tmp == NULL) {
+                        cout << "Error: memory allocation (insert)" << endl;
+                        return;
+                    }
+                    arr = tmp;
+                }
                 memmove (arr + pos, arr + pos - 1, (size - pos + 1) * sizeof (int));
                 arr[pos - 1] = value;
                 ++size;
@@ -56,10 +65,14 @@ public:
     }
     void print () {
         for (int i = 0; i < size; ++i) {
-            cout << arr[i] << ' ';
+            cout << arr[i] << " ";
         }
     }
     int operator[] (const int pos) {
+        if (pos >= size || pos < 0) {
+            cout << "Error: out of range (opertor[])" << endl;
+            return -1;
+        }
         return arr[pos];
     }
     Array& operator= (const Array& tmp) {
@@ -68,6 +81,10 @@ public:
             capacity = tmp.capacity;
             size = tmp.size;
             arr = (int*)malloc (capacity * sizeof (*arr));
+            if (arr == NULL) {
+                cout << "Error: memory allocation (operator=)" << endl;
+                return *this;
+            }
             for (int i = 0; i < size; ++i) {
                 arr[i] = tmp.arr[i];
             }
@@ -87,7 +104,7 @@ int main () {
     FILE* f = fopen ("input.txt", "r");
 
     if (f == NULL) {
-        printf ("ERROR");
+        cout << "Error: reading file" << endl;;
         return 0;
     }
 
