@@ -4,44 +4,6 @@
 
 using namespace std;
 
-// Управление сложностью - мощный баз ворд
-
-/*int main ()
-{
-    FILE* f = fopen ("input.txt", "r");
-    if (f == NULL) {
-        printf ("ERROR");
-        return 0;
-    }
-
-    size_t arr_size = 0; // сколько прочитано интов
-    size_t capacity = 12; // ёмкость выделенной памяти в элемент
-
-    int* arr = (int*)malloc (sizeof (*arr) * capacity);
-
-    while (fscanf (f, "%d", arr + arr_size) == 1) {
-        arr_size++;
-        if (arr_size == capacity) {
-            capacity *= 2;
-            int* tmp = (int *) realloc (arr, sizeof (*arr) * capacity);
-            if (tmp == NULL) {
-                break;
-            }
-            arr = tmp;
-        }
-        //arr = realloc (arr, sizeof(*arr) * (i + 1)); // потеряем память
-    }
-
-    for (int i = 0; i < arr_size; ++i) {
-        printf ("%d ", *(arr + i));
-    }
-
-    free (arr);
-    fclose (f);
-
-    return 0;
-}*/
-
 class Array {
 public:
     Array ()
