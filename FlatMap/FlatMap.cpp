@@ -34,7 +34,8 @@ struct TValue {
 
 struct TMapValue {
   TMapValue () {
-      Key = "";
+    Key = sKey();
+    Value = TValue();
   }
 
   TMapValue (const sKey& key, const TValue& val) {
