@@ -6,18 +6,17 @@
 // студента), значением - произвольная структура (например, численные
 // характеристики студента).
 
+// Ключ - типа string.
 typedef std::string sKey;
-typedef struct TValue TValue;
-typedef struct TMapValue TMapValue;
-
+// Значение - струкура с характеристиками ключа.
 struct TValue {
   TValue () {
-      Age = 0;
-      Weight = 0;
+    Age = 0;
+    Weight = 0;
   }
   
   TValue (const unsigned& age, const unsigned& weight) {
-      Age = age;
+    Age = age;
       Weight = weight;
   }
 
@@ -31,7 +30,7 @@ struct TValue {
   unsigned Age;
   unsigned Weight;
 };
-
+// Структура: Ключ, Значние.
 struct TMapValue {
   TMapValue () {
     Key = sKey();
@@ -39,8 +38,8 @@ struct TMapValue {
   }
 
   TMapValue (const sKey& key, const TValue& val) {
-      Key = key;
-      Value = val;
+    Key = key;
+    Value = val;
   }
 
   friend bool operator!=(const TMapValue &a, const TMapValue &b) {
@@ -58,29 +57,30 @@ class TFlatMap {
 public:
   TFlatMap ()
       : Capacity (DefaultCapacity), SizeArr (0) {
-      Arr = new TMapValue[Capacity];
+    Arr = new TMapValue[Capacity];
   };
 
   ~TFlatMap () {
-      delete[] Arr;
+    delete[] Arr;
   };
 
   TFlatMap (const TFlatMap& b) {
-      Capacity = b.Capacity;
-      SizeArr = b.SizeArr;
-      Arr = new TMapValue[Capacity];
+    Capacity = b.Capacity;
+    SizeArr = b.SizeArr;
+    Arr = new TMapValue[Capacity];
 
-      std::copy(b.Arr, &(b.Arr[SizeArr - 1]), Arr);
+    std::copy(b.Arr, &(b.Arr[SizeArr - 1]), Arr);
   };
 
   TFlatMap(TFlatMap &&b) {
-      Capacity = b.Capacity;
-      SizeArr = b.SizeArr;
-      Arr = new TMapValue[Capacity];
+    Capacity = b.Capacity;
+    SizeArr = b.SizeArr;
+    Arr = new TMapValue[Capacity];
 
-      std::copy(b.Arr, &(b.Arr[SizeArr - 1]), Arr);
+    std::copy(b.Arr, &(b.Arr[SizeArr - 1]), Arr);
   }; 
-
+  
+  // Бинарный поиск по ключу. Возвращаемое значение - индекс в массиве.
   int BinarySearch (const sKey& key) const {
     int left = -1;
     int right = SizeArr;
@@ -100,8 +100,6 @@ public:
     return right;
   }
   // Обменивает значения двух флетмап.
-  // Подумайте, зачем нужен этот метод, при наличии стандартной функции
-  // std::swap.
   void swap(TFlatMap &b) {
     TFlatMap tmp(std::move(*this));
     *this = std::move(b);
@@ -136,12 +134,13 @@ public:
     Arr = new TMapValue[Capacity];
     SizeArr = 0;
   }
-  // Удаляет элемент по заданному ключу.
+  // Удаляет элемент по заданному ключу. Возвращаемое значение - успешность удаления.
   bool erase(const sKey &k) {
     int index = BinarySearch (k);
-
+      
     if (Arr[index].Key == k) {
-      std::copy(&Arr[index + 1], &Arr[SizeArr], &Arr[index]);
+      std::copy (&Arr[index + 1], &Arr[SizeArr], &Arr[index]);
+      Arr[SizeArr - 1] = TMapValue ();
       --SizeArr;
       return true;
     }
@@ -175,12 +174,12 @@ public:
   // Проверка наличия значения по заданному ключу.
   bool contains(const sKey &k) const {
     int index = BinarySearch (k);
-    
+
     return (Arr[index].Key == k);
   }
   // Возвращает значение по ключу. Небезопасный метод.
-  // В случае отсутствия ключа в контейнере, следует вставить в контейнер
-  // значение, созданное конструктором по умолчанию и вернуть ссылку на него.
+  // В случае отсутствия ключа в контейнере, вставляет в контейнер
+  // значение, созданное конструктором по умолчанию и возвращает ссылку на него.
   TValue &operator[](const sKey &k) {
     int index = BinarySearch (k);
 
@@ -202,7 +201,7 @@ public:
       throw std::invalid_argument("Not found arguments\n");
     }
   };
-
+  // Возвращает значение по ключу. Бросает исключение при неудаче.
   const TValue &at(const sKey &k) const {
     int index = BinarySearch (k);
 
@@ -223,6 +222,13 @@ public:
 
   friend bool operator!=(const TFlatMap &a, const TFlatMap &b);
   friend bool operator==(const TFlatMap &a, const TFlatMap &b);
+  // Выводит весь FlatMap в виде "Key: x Age: y Weight: z"
+  void PrintMap () {
+    for (int i = 0; i < SizeArr; ++i) {
+      std::cout << "Key: " << Arr[i].Key << " Age: " << Arr[i].Value.Age << " Weight: " << Arr[i].Value.Weight << std::endl; 
+    }
+    std::cout << std::endl;
+  }
 
 private:
   TMapValue* Arr;
