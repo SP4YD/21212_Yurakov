@@ -26,6 +26,9 @@ struct TValue {
     }
     return false;
   }
+  friend bool operator==(const TValue &a, const TValue &b) {
+    return !(a != b);
+  }
 
   unsigned Age;
   unsigned Weight;
@@ -48,6 +51,9 @@ struct TMapValue {
     }
     return false;
   }
+  friend bool operator==(const TMapValue &a, const TMapValue &b) {
+    return !(a != b);
+  }
 
   sKey Key;
   TValue Value;
@@ -69,18 +75,17 @@ public:
     SizeArr = b.SizeArr;
     Arr = new TMapValue[Capacity];
 
-    std::copy(b.Arr, &(b.Arr[SizeArr - 1]), Arr);
+    std::copy(b.Arr, &(b.Arr[SizeArr]), Arr);
   };
 
-  TFlatMap(TFlatMap &&b) {
+  TFlatMap(TFlatMap &&b) noexcept {
     Capacity = b.Capacity;
     SizeArr = b.SizeArr;
-    Arr = new TMapValue[Capacity];
-
-    std::copy(b.Arr, &(b.Arr[SizeArr - 1]), Arr);
+    Arr = b.Arr;
+    b.Arr = nullptr;
   }; 
   
-  // Бинарный поиск по ключу. Возвращаемое значение - индекс в массиве.
+  //+ Бинарный поиск по ключу. Возвращаемое значение - индекс в массиве.
   int BinarySearch (const sKey& key) const {
     int left = -1;
     int right = SizeArr;
@@ -99,42 +104,48 @@ public:
 
     return right;
   }
-  // Обменивает значения двух флетмап.
+  //+ Обменивает значения двух флетмап.
   void swap(TFlatMap &b) {
-    TFlatMap tmp(std::move(*this));
-    *this = std::move(b);
-    b = std::move(tmp);
+    if (&b != this){
+      TFlatMap tmp (std::move(*this));
+      *this = std::move(b);
+      b = std::move(tmp);
+    }
   }
-
+  //+
   TFlatMap &operator=(const TFlatMap &b) {
     if (&b != this) {
       SizeArr = b.SizeArr;
       Capacity = b.Capacity;
+
+      delete[] Arr;
+      Arr = new TMapValue[Capacity];
     
       std::copy(b.Arr, &(b.Arr[SizeArr]), Arr);
     }
     return *this;
   }
-
-  TFlatMap &operator=(TFlatMap &&b) {
+  //+
+  TFlatMap &operator=(TFlatMap &&b) noexcept {
     if (&b != this) {
       SizeArr = b.SizeArr;
       Capacity = b.Capacity;
+
+      delete[] Arr;
     
       Arr = b.Arr;
       b.Arr = nullptr;
     }
     return *this;
   }
-
-  // Очищает контейнер.
+  //+ Очищает контейнер.
   void clear() {
     delete[] Arr;
     Capacity = DefaultCapacity;
     Arr = new TMapValue[Capacity];
     SizeArr = 0;
   }
-  // Удаляет элемент по заданному ключу. Возвращаемое значение - успешность удаления.
+  //+ Удаляет элемент по заданному ключу. Возвращаемое значение - успешность удаления.
   bool erase(const sKey &k) {
     int index = BinarySearch (k);
       
@@ -147,7 +158,7 @@ public:
 
     return false;
   }
-  // Вставка в контейнер. Возвращаемое значение - успешность вставки.
+  //+ Вставка в контейнер. Возвращаемое значение - успешность вставки.
   bool insert(const sKey &k, const TValue &v) {
     int index = BinarySearch (k);
 
@@ -171,13 +182,13 @@ public:
 
     return false;
   }
-  // Проверка наличия значения по заданному ключу.
+  //+ Проверка наличия значения по заданному ключу.
   bool contains(const sKey &k) const {
     int index = BinarySearch (k);
 
     return (Arr[index].Key == k);
   }
-  // Возвращает значение по ключу. Небезопасный метод.
+  //+ Возвращает значение по ключу. Небезопасный метод.
   // В случае отсутствия ключа в контейнере, вставляет в контейнер
   // значение, созданное конструктором по умолчанию и возвращает ссылку на него.
   TValue &operator[](const sKey &k) {
@@ -190,7 +201,7 @@ public:
     return Arr[index].Value;
   };
 
-  // Возвращает значение по ключу. Бросает исключение при неудаче.
+  //+ Возвращает значение по ключу. Бросает исключение при неудаче.
   TValue &at(const sKey &k) {
     int index = BinarySearch (k);
 
@@ -212,15 +223,17 @@ public:
       throw std::invalid_argument("Not found arguments\n");
     }
   };
-
+  //+
   size_t size() const {
     return SizeArr;
   };
+  //+
   bool empty() const {
     return !SizeArr;
   };
-
+  //+
   friend bool operator!=(const TFlatMap &a, const TFlatMap &b);
+  //+
   friend bool operator==(const TFlatMap &a, const TFlatMap &b);
   // Выводит весь FlatMap в виде "Key: x Age: y Weight: z"
   void PrintMap () {
@@ -236,11 +249,11 @@ private:
   int Capacity;
   int SizeArr;
 };
-
+//+
 int min (const int &a, const int &b) {
   return a < b? a : b;
 }
-
+//+
 bool operator!=(const TFlatMap &a, const TFlatMap &b) {
   if (a.SizeArr != b.SizeArr) {
     return true;
@@ -254,7 +267,7 @@ bool operator!=(const TFlatMap &a, const TFlatMap &b) {
 
   return false;
 }
-
+//+
 bool operator==(const TFlatMap &a, const TFlatMap &b) {
   return !(a != b);
 }
