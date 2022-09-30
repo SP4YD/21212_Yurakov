@@ -204,7 +204,7 @@ public:
   //+ Возвращает значение по ключу. Бросает исключение при неудаче.
   TValue &at(const sKey &k) {
     int index = BinarySearch (k);
-
+    
     if (Arr[index].Key == k){
       return Arr[index].Value;
     }
@@ -215,7 +215,7 @@ public:
   // Возвращает значение по ключу. Бросает исключение при неудаче.
   const TValue &at(const sKey &k) const {
     int index = BinarySearch (k);
-
+    
     if (Arr[index].Key == k){
       return Arr[index].Value;
     }
