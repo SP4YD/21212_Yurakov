@@ -98,9 +98,13 @@ TEST (InsertTest, IncreaseOfAllocatedMemoryAfterInsert) {
     sKey key = "a";
     for (int i = 0; i < 20; ++i) {
       EXPECT_TRUE (fm.insert (key, TValue (i , i)));
-      EXPECT_TRUE (fm.contains (key));
-      EXPECT_TRUE (fm[key] == TValue (i , i));
       key += "a";
+    }
+    key = "a";
+    for (int i = 0; i < 20; ++i) {
+        EXPECT_TRUE (fm.contains (key));
+        EXPECT_TRUE (fm[key] == TValue (i , i));
+        key += "a";
     }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

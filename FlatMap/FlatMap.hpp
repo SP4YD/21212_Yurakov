@@ -70,7 +70,7 @@ private:
     // Construct empty MapValue with the given input values
     TMapValue (const sKey& key, const TValue& val);
 
-    bool operator!=(const TMapValue &a);
+    bool operator==(const TMapValue &a);
 
     sKey Key;
     TValue Value;

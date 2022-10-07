@@ -28,8 +28,8 @@ TFlatMap::TMapValue::TMapValue(const sKey& key, const TValue& val) {
   Value = val;
 }
 
-bool TFlatMap::TMapValue::operator!=(const TFlatMap::TMapValue &a) {
-  return (a.Key != Key || a.Value != Value);
+bool TFlatMap::TMapValue::operator==(const TFlatMap::TMapValue &a) {
+  return (a.Key == Key && a.Value == Value);
 }
 
 TFlatMap::TFlatMap ()
@@ -57,11 +57,11 @@ TFlatMap::TFlatMap(TFlatMap &&b) noexcept {
 }
 
 size_t TFlatMap::BinarySearch (const sKey& key) const {
-  size_t left = -1;
-  size_t right = SizeArr;
-  size_t mid;
+  long long left = -1;
+  long long right = SizeArr;
+  long long mid;
 
-  while (right - left > 1) {
+  while (right > left + 1) {
     mid = left + (right - left) / 2;
 
     if (Arr[mid].Key < key) {
@@ -196,18 +196,12 @@ bool TFlatMap::empty() const {
 }
 
 bool operator!=(const TFlatMap &a, const TFlatMap &b) {
-  if (a.SizeArr != b.SizeArr) {
-    return true;
-  }
-
-  for (size_t i = 0; i < a.SizeArr; ++i) {
-    if (a.Arr[i] != b.Arr[i]) {
-      return true;
-    }
-  }
-
-  return false;
+  return !(a == b);
 }
 bool operator==(const TFlatMap &a, const TFlatMap &b) {
-  return !(a != b);
+  if (a.SizeArr != b.SizeArr) {
+    return false;
+  }
+
+  return std::equal (a.Arr, &a.Arr[a.SizeArr], b.Arr, &b.Arr[b.SizeArr]);
 }
