@@ -1,154 +1,148 @@
-#pragma once
-#include <iostream>
+#include "StackCommands.hpp"
 
-#include "ForthCommands.cpp"
-#include "exceptions.cpp"
+ForthCommands* StackCommands::Creation () {
+    return new StackCommands;
+}
 
-class StackCommands: private ForthCommands {
-public:
-    static ForthCommands* Creation () {
-        return new StackCommands;
+bool StackCommands::Run () {
+    if (NameCommand == "drop") {
+        Drop();
     }
-private:
-    void Run () {  ///override
-        if (NameCommand == "drop") {
-            Drop();
-        }
-        else if (NameCommand == "dup") {
-            Dup();
-        }
-        else if (NameCommand == "point") {
-            Point();
-        }
-        else if (NameCommand == "swap") {
-            Swap();
-        }
-        else if (NameCommand == "rot") {
-            Rot();
-        }
-        else if (NameCommand == "over") {
-            Over();
-        }
-        else if (NameCommand == "emit") {
-            Emit();
-        }
-        else if (NameCommand == "cr") {
-            Cr();
-        }
-        else if (IsNumber(NameCommand)) { /// Реализовать функцию которая проверяет число ли это
-
-        }
+    else if (NameCommand == "dup") {
+        Dup();
     }
-
-    int Push (const int a) {
-        Stack.push (a);
-
-        return 0;
+    else if (NameCommand == ".") {
+        Point();
+        return true;
+    }
+    else if (NameCommand == "swap") {
+        Swap();
+    }
+    else if (NameCommand == "rot") {
+        Rot();
+    }
+    else if (NameCommand == "over") {
+        Over();
+    }
+    else if (NameCommand == "emit") {
+        Emit();
+        return true;
+    }
+    else if (NameCommand == "cr") {
+        Cr();
+        return true;
+    }
+    else if (IsNumber(NameCommand)) {
+        Push (stoi(NameCommand));
+    }
+    else {
+        throw my_exception (UnknownCommand);
     }
 
-    int Dup () {
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
-        Stack.push (Stack.top());
-        return 0;
+    return false;
+}
+
+void StackCommands::Push (const int a) {
+    Stack->push (a);
+}
+
+void StackCommands::Dup () {
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
     }
 
-    int Drop () {
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
-        Stack.pop ();
-        return 0;
+    Stack->push (Stack->top());
+}
+
+void StackCommands::Drop () {
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
     }
 
-    int Point () {
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
-        std::cout << "< " << Stack.top () << std::endl;
-        Stack.pop ();
-        return 0;
+    Stack->pop ();
+}
+
+void StackCommands::Point () {
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
     }
 
-    int Swap () {
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
+    std::cout << "< " << Stack->top () << std::endl;
+    Stack->pop ();
+}
 
-        int a = Stack.top();
-        Stack.pop ();
-
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top();
-        Stack.pop ();
-        Stack.push (a);
-        Stack.push (b);
-        return 0;
+void StackCommands::Swap () {
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
     }
 
-    int Rot () {
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
+    int a = Stack->top();
+    Stack->pop ();
 
-        int a = Stack.top();
-        Stack.pop ();
-
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top();
-        Stack.pop ();
-
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
-
-        int c = Stack.top();
-        Stack.pop ();
-
-        Stack.push (a);
-        Stack.push (c);
-        Stack.push (b);
-        return 0;
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
     }
 
-    int Over () {
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
+    int b = Stack->top();
+    Stack->pop ();
+    Stack->push (a);
+    Stack->push (b);
+}
 
-        int a = Stack.top();
-        Stack.pop ();
-
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top();
-
-        Stack.push (a);
-        Stack.push (b);
-        return 0;
+void StackCommands::Rot () {
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
     }
 
-    int Emit () {
-        if (Stack.empty()){
-            throw my_exception(EmptyStack);
-        }
+    int a = Stack->top();
+    Stack->pop ();
 
-        std::cout << "< " << (char)Stack.top () << std::endl;
-        Stack.pop ();
-
-        return 0;
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
     }
 
-    int Cr () {
-        std::cout << std::endl;
+    int b = Stack->top();
+    Stack->pop ();
+
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
     }
-};
+
+    int c = Stack->top();
+    Stack->pop ();
+
+    Stack->push (a);
+    Stack->push (c);
+    Stack->push (b);
+}
+
+void StackCommands::Over () {
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
+    }
+
+    int a = Stack->top();
+    Stack->pop ();
+
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
+    }
+
+    int b = Stack->top();
+
+    Stack->push (a);
+    Stack->push (b);
+}
+
+void StackCommands::Emit () {
+    if (Stack->empty()){
+        throw my_exception(EmptyStack);
+    }
+
+    std::cout << "< " << (char)Stack->top () << std::endl;
+    Stack->pop ();
+}
+
+void StackCommands::Cr () {
+    std::cout << "< " << std::endl;
+}

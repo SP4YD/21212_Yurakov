@@ -1,109 +1,126 @@
-#pragma once
-#include "ForthCommands.cpp"
-#include "exceptions.cpp"
+#include "MathCommands.hpp"
 
-class MathCommands: private ForthCommands { 
-    static ForthCommands* Creation () {
-        return new MathCommands;
+ForthCommands* MathCommands::Creation () {
+    return new MathCommands;
+}
+
+bool MathCommands::Run () {
+    if (NameCommand == "+") {
+        Plus();
+    }
+    else if (NameCommand == "*") {
+        Multip();
+    }
+    else if (NameCommand == "-") {
+        Sub();
+    }
+    else if (NameCommand == "/") {
+        Division();
+    }
+    else if (NameCommand == "mod") {
+        Mod();
+    }
+    else {
+        throw my_exception (UnknownCommand);
     }
 
-    int Plus () {
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
+    return false;
+}
 
-        int a = Stack.top ();
-        Stack.pop ();
-
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top ();
-        Stack.pop ();
-
-        Stack.push(b + a);
-
-        return 0;
+void MathCommands::Plus () {
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
     }
 
-    int Multip () {
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
+    int a = Stack->top ();
+    Stack->pop ();
 
-        int a = Stack.top ();
-        Stack.pop ();
-
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top ();
-        Stack.pop ();
-
-        Stack.push(b * a);
-
-        return 0;
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
     }
 
-    int Sub () {
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
+    int b = Stack->top ();
+    Stack->pop ();
 
-        int a = Stack.top ();
-        Stack.pop ();
+    Stack->push(b + a);
+}
 
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top ();
-        Stack.pop ();
-
-        Stack.push(b - a);
-        
-        return 0;
+void MathCommands::Multip () {
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
     }
 
-    int Division () {
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
+    int a = Stack->top ();
+    Stack->pop ();
 
-        int a = Stack.top ();
-        Stack.pop ();
-
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top ();
-        Stack.pop ();
-
-        Stack.push(b / a);
-
-        return 0;
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
     }
 
-    int Mod () {
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
+    int b = Stack->top ();
+    Stack->pop ();
 
-        int a = Stack.top ();
-        Stack.pop ();
+    Stack->push(b * a);
+}
 
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top ();
-        Stack.pop ();
-
-        Stack.push (b % a);
-
-        return 0;
+void MathCommands::Sub () {
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
     }
-};
+
+    int a = Stack->top ();
+    Stack->pop ();
+
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
+    }
+
+    int b = Stack->top ();
+    Stack->pop ();
+
+    Stack->push(b - a);
+}
+
+void MathCommands::Division () {
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
+    }
+
+    int a = Stack->top ();
+    Stack->pop ();
+
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
+    }
+
+    int b = Stack->top ();
+    Stack->pop ();
+
+    if (a == 0) {
+        throw my_exception ("Division by zero");
+    }
+
+    Stack->push(b / a);
+}
+
+void MathCommands::Mod () {
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
+    }
+
+    int a = Stack->top ();
+    Stack->pop ();
+
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
+    }
+
+    int b = Stack->top ();
+    Stack->pop ();
+
+    if (a == 0) {
+        throw my_exception ("Division by zero");
+    }
+
+    Stack->push (b % a);
+}

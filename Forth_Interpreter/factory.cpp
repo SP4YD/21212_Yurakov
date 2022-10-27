@@ -1,25 +1,43 @@
-#pragma once
-#include <map>
-#include <string>
+#include "Factory.hpp"
 
-#include "StackCommands.cpp"
-#include "ForthCommands.cpp"
+void Factory::RegistrationCommands () { 
+    ExistingCommands["dup"] = StackCommands::Creation;
+    ExistingCommands["drop"] = StackCommands::Creation;
+    ExistingCommands["."] = StackCommands::Creation;
+    ExistingCommands["swap"] = StackCommands::Creation;
+    ExistingCommands["rot"] = StackCommands::Creation;
+    ExistingCommands["over"] = StackCommands::Creation;
+    ExistingCommands["emit"] = StackCommands::Creation;
+    ExistingCommands["cr"] = StackCommands::Creation;
 
-class Factory {
-public:
-    void RegisterCommands () {   /////////////////////////////////////////
-        ExistingCommands["drop"] = StackCommands::Creation;
-        ////// Прописать все
+    ExistingCommands["+"] = MathCommands::Creation;
+    ExistingCommands["*"] = MathCommands::Creation;
+    ExistingCommands["-"] = MathCommands::Creation;
+    ExistingCommands["/"] = MathCommands::Creation;
+    ExistingCommands["mod"] = MathCommands::Creation;
+
+    ExistingCommands[">"] = LogOperCommands::Creation;
+    ExistingCommands["<"] = LogOperCommands::Creation;
+    ExistingCommands["="] = LogOperCommands::Creation;
+
+    ExistingCommands["." + '"'] = PrintLine::Creation;
+}
+
+ForthCommands* Factory::CreateExecutor (std::string& NameExecutor) {
+    if (NameExecutor.size() > 1 && NameExecutor[0] == '.' && NameExecutor[1] == '"') {
+        NameExecutor.erase(NameExecutor.begin(), NameExecutor.begin() + 4);
+        
+        return ExistingCommands["." + '"']();
     }
-
-    ForthCommands* CreateExecutor (const std::string NameExecutor) {
-        if (ExistingCommands.find (NameExecutor) == ExistingCommands.end()) {
-            throw; ///////
+    if (ExistingCommands.find (NameExecutor) == ExistingCommands.end()) {
+        if (IsNumber(NameExecutor)) {
+            return StackCommands::Creation();
         }
         else {
-            return ExistingCommands[NameExecutor]();
+            throw my_exception(UnknownCommand); 
         }
     }
-private:
-    std::map <std::string, ForthCommands*(*)()> ExistingCommands;
-};
+    else {
+        return ExistingCommands[NameExecutor]();
+    }
+}

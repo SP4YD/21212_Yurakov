@@ -1,71 +1,76 @@
-#pragma once
-#include "ForthCommands.cpp"
-#include "exceptions.cpp"
+#include "LogOperCommands.hpp"
 
+ForthCommands* LogOperCommands::Creation () {
+    return new LogOperCommands;
+}
 
-class LogOperCommands: private ForthCommands { 
-private:
-    static ForthCommands* Creation () {
-        return new LogOperCommands;
+bool LogOperCommands::Run () {  ///override
+    if (NameCommand == ">") {
+        LogOperMore();
+    }
+    else if (NameCommand == "<") {
+        LogOperLess();
+    }
+    else if (NameCommand == "=") {
+        LogOperEqually();
+    }
+    else {
+        throw my_exception (UnknownCommand);
     }
 
-    int LogOperMore () {
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
+    return false;
+}
 
-        int a = Stack.top ();
-        Stack.pop ();
-
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top ();
-        Stack.pop ();
-
-        Stack.push (b > a);
-
-        return 0;
+void LogOperCommands::LogOperMore () {
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
     }
 
-    int LogOperLess () {
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
+    int a = Stack->top ();
+    Stack->pop ();
 
-        int a = Stack.top ();
-        Stack.pop ();
-
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top ();
-        Stack.pop ();
-
-        Stack.push (b < a);
-
-        return 0;
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
     }
 
-    int LogOperEqually () {
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
+    int b = Stack->top ();
+    Stack->pop ();
 
-        int a = Stack.top ();
-        Stack.pop ();
+    Stack->push (b > a);
+}
 
-        if (Stack.empty ()) {
-            throw my_exception(EmptyStack);
-        }
-
-        int b = Stack.top ();
-        Stack.pop ();
-
-        Stack.push (b == a);
-
-        return 0;
+void LogOperCommands::LogOperLess () {
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
     }
-};
+
+    int a = Stack->top ();
+    Stack->pop ();
+
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
+    }
+
+    int b = Stack->top ();
+    Stack->pop ();
+
+    Stack->push (b < a);
+}
+
+void LogOperCommands::LogOperEqually () {
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
+    }
+
+    int a = Stack->top ();
+    Stack->pop ();
+
+    if (Stack->empty ()) {
+        throw my_exception(EmptyStack);
+    }
+
+    int b = Stack->top ();
+    Stack->pop ();
+
+    Stack->push (b == a);
+}
