@@ -38,7 +38,7 @@ bool StackCommands::Run () {
     else {
         throw my_exception (UnknownCommand);
     }
-
+    
     return false;
 }
 
@@ -67,7 +67,7 @@ void StackCommands::Point () {
         throw my_exception(EmptyStack);
     }
 
-    std::cout << "< " << Stack->top () << std::endl;
+    std::cout << Stack->top () << " ";
     Stack->pop ();
 }
 
@@ -139,10 +139,10 @@ void StackCommands::Emit () {
         throw my_exception(EmptyStack);
     }
 
-    std::cout << "< " << (char)Stack->top () << std::endl;
+    std::cout << (char)Stack->top () << " ";
     Stack->pop ();
 }
 
 void StackCommands::Cr () {
-    std::cout << "< " << std::endl;
+    std::cout << std::endl << "< ";
 }

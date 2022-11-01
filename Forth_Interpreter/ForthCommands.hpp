@@ -1,6 +1,8 @@
 #pragma once
+
 #include <stack>
 #include <string>
+#include <vector>
 
 class ForthCommands {
 public:
@@ -8,4 +10,5 @@ public:
 
     std::stack <int>* Stack;
     std::string NameCommand;
+    std::string* CommandsForSecondProcessing;
 };

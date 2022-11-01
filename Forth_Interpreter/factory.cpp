@@ -20,24 +20,18 @@ void Factory::RegistrationCommands () {
     ExistingCommands["<"] = LogOperCommands::Creation;
     ExistingCommands["="] = LogOperCommands::Creation;
 
-    ExistingCommands["." + '"'] = PrintLine::Creation;
+    ExistingCommands[".\""] = PrintingLine::Creation;
+
+    ExistingCommands["if"] = OperatorIf::Creation;
+
+    ExistingCommands["do"] = OperatorDoLoop::Creation;
 }
 
 ForthCommands* Factory::CreateExecutor (std::string& NameExecutor) {
-    if (NameExecutor.size() > 1 && NameExecutor[0] == '.' && NameExecutor[1] == '"') {
-        NameExecutor.erase(NameExecutor.begin(), NameExecutor.begin() + 4);
-        
-        return ExistingCommands["." + '"']();
-    }
-    if (ExistingCommands.find (NameExecutor) == ExistingCommands.end()) {
-        if (IsNumber(NameExecutor)) {
-            return StackCommands::Creation();
-        }
-        else {
-            throw my_exception(UnknownCommand); 
-        }
+    if (ExistingCommands.find (NameExecutor) != ExistingCommands.end()) {
+        return ExistingCommands[NameExecutor]();
     }
     else {
-        return ExistingCommands[NameExecutor]();
+        return HandlingSpecialCases (NameExecutor);
     }
 }

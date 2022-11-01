@@ -1,16 +1,16 @@
 #include "PrintingLine.hpp"
 
-ForthCommands* PrintLine::Creation () {
-    return new PrintLine;
+ForthCommands* PrintingLine::Creation () {
+    return new PrintingLine;
 }
 
-bool PrintLine::Run () {
+bool PrintingLine::Run () {
     Print (NameCommand);
     
     return true;
 }
 
-void PrintLine::Print (std::string str) {
+void PrintingLine::Print (std::string str) {
     NameCommand.pop_back();
-    std::cout << "< " << NameCommand << std::endl;
+    std::cout << NameCommand << " ";
 }

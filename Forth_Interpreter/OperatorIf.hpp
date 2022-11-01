@@ -1,21 +1,16 @@
 #pragma once
 
+#include <vector>
+
 #include "ForthCommands.hpp"
+#include "Parser.hpp"
 #include "exceptions.hpp"
 
-class MathCommands: private ForthCommands { 
+class OperatorIf: private ForthCommands { 
 public:
     static ForthCommands* Creation ();
 
     bool Run () override;
 
-    void Plus ();
-
-    void Multip ();
-
-    void Sub ();
-
-    void Division ();
-
-    void Mod ();
+    void If ();
 };

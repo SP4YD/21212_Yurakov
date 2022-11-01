@@ -1,15 +1,15 @@
 #pragma once
 
-#include <iostream>
+#include <sstream>
 
 #include "ForthCommands.hpp"
+#include "exceptions.hpp"
 
-
-class PrintingLine: private ForthCommands {
+class OperatorDoLoop: private ForthCommands { 
 public:
     static ForthCommands* Creation ();
 
     bool Run () override;
 
-    void Print (std::string str);
+    void DoLoop ();
 };
