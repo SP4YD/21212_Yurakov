@@ -77,7 +77,9 @@ void OperatorDoLoop::DoLoop () {
         result += NameCommand + " ";
     }
 
-    result.pop_back();
+    if (result.length() > 0) {
+        result.pop_back();
+    }
 
     *CommandsForSecondProcessing = result;
 }
