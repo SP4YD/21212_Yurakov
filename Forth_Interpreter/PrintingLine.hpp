@@ -10,6 +10,7 @@ public:
     static ForthCommands* Creation ();
     // Executing the invoked command
     bool Run () override;
+private:
     // Prints the specified string (without quotes)
     void Print (std::string str);
 };

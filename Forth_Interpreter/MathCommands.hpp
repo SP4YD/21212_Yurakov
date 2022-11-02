@@ -9,6 +9,7 @@ public:
     static ForthCommands* Creation ();
     // Executing the invoked command
     bool Run () override;
+protected:
     // Adds the first number from the stack with the second
     // Pushes the result on the stack
     void Plus ();

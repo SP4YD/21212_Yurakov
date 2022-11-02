@@ -12,6 +12,7 @@ public:
     static ForthCommands* Creation ();
     // Executing the invoked command
     bool Run () override;
+protected:
     // Push number on stack
     // Pushes the result on the stack
     void Push (const int a);

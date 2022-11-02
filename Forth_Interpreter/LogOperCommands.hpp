@@ -9,6 +9,7 @@ public:
     static ForthCommands* Creation ();
     // Executing the invoked command
     bool Run () override;
+protected:
     // Calculates whether the second number on the stack is greater than the first
     // Pushes the result on the stack
     // 0 - second < first

@@ -11,6 +11,7 @@ public:
     static ForthCommands* Creation ();
     // Executing the invoked command
     bool Run () override;
+protected:
     // Unwinds the loop and substitutes the desired values instead of i.
     // And sends the result for secondary processing
     void DoLoop ();

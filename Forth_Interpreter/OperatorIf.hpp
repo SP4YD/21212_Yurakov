@@ -17,5 +17,6 @@ public:
     //
     // if THEN_BRANCH else ELSE_BRANCH then ;
     // If there is > 0 on the stack, THEN_BRANCH goes to secondary processing, else ELSE_BRANCH
+private:
     void If ();
 };
