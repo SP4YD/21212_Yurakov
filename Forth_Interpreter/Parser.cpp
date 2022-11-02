@@ -1,8 +1,6 @@
 #include "Parser.hpp"
 
-#include <iostream> ////////TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH TRASH 
-
-std::vector <std::string> parser (const std::string str) {
+std::vector <std::string> Parser (const std::string str) {
     std::istringstream ist (str);
     std::vector <std::string> splitStr;
 

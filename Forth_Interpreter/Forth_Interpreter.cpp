@@ -14,7 +14,7 @@ int main() {
         bool someCout = false;
         getline (std::cin, str, '\n');
 
-        std::vector <std::string> commands = parser (str);
+        std::vector <std::string> commands = Parser (str);
         std::cout << "< ";
 
         for (int i = 0; i < commands.size(); ++i) {
@@ -49,7 +49,7 @@ int main() {
 bool SecondaryProcessing (std::string* comm, std::stack <int>* generalStack, Factory& factory) {
     ForthCommands* executableCommand;
     std::string* commandsForSecondProcessing = new std::string();
-    std::vector <std::string> commands = parser (*comm);
+    std::vector <std::string> commands = Parser (*comm);
     bool someCout = 0;
 
     for (int i = 0; i < commands.size(); ++i) {
