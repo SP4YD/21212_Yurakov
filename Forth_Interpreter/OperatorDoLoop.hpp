@@ -4,15 +4,14 @@
 
 #include "ForthCommands.hpp"
 #include "exceptions.hpp"
-// Contains a command that performs the necessary transformations with DoLoop
-class OperatorDoLoop: private ForthCommands { 
+// Unwinds the loop and substitutes the desired values instead of i.
+// And sends the result for secondary processing
+class OperatorDoLoop: public ForthCommands { 
 public:
-    // Returns an instance of this classс
-    static ForthCommands* Creation ();
     // Executing the invoked command
     bool Run () override;
-protected:
-    // Unwinds the loop and substitutes the desired values instead of i.
-    // And sends the result for secondary processing
-    void DoLoop ();
 };
+
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<OperatorDoLoop> Command_do ("do");
+}

@@ -1,16 +1,6 @@
 #include "OperatorDoLoop.hpp"
 
-ForthCommands* OperatorDoLoop::Creation () {
-    return new OperatorDoLoop;
-}
-
 bool OperatorDoLoop::Run () {
-    DoLoop ();
-
-    return false;
-}
-
-void OperatorDoLoop::DoLoop () {
     int i;
     int N;
     
@@ -82,4 +72,6 @@ void OperatorDoLoop::DoLoop () {
     }
 
     *CommandsForSecondProcessing = result;
+
+    return false;
 }

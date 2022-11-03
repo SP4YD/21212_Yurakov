@@ -3,6 +3,8 @@
 #include <stack>
 #include <string>
 #include <vector>
+
+#include "FactoryRegistrationCommands.hpp"
 // Interface, with a basic set of functions and variables required by commands
 class ForthCommands {
 public:

@@ -1,15 +1,6 @@
 #include "OperatorIf.hpp"
 
-ForthCommands* OperatorIf::Creation () {
-    return new OperatorIf;
-}
-
 bool OperatorIf::Run () {
-    If ();
-    return false;
-}
-
-void OperatorIf::If () {
     if (Stack->empty()) {
         throw my_exception (EmptyStack);    
     }
@@ -49,4 +40,6 @@ void OperatorIf::If () {
     else {
         *CommandsForSecondProcessing = afterElse;
     }
+
+    return false;
 }

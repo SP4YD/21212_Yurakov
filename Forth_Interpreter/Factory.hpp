@@ -1,26 +1,24 @@
 #pragma once
 
-#include <map>
 #include <string>
-#include <memory>
+#include <map>
+#include <utility>
+ // The factory was taken from the https://derydoca.com/2019/03/c-tutorial-auto-registering-factory/
+class ForthCommands;
+ 
+typedef ForthCommands*(*ForthExecutorsGenerator)();
 
-#include "StackCommands.hpp"
-#include "MathCommands.hpp"
-#include "LogOperCommands.hpp"
-#include "PrintingLine.hpp"
-#include "OperatorIf.hpp"
-#include "OperatorDoLoop.hpp"
-// Factory, stores and creates all executors
 class Factory {
 public:
-    // Registers the names of teams and their executors
-    void RegistrationCommands ();
-    // Creates executors and returns them
-    ForthCommands* CreateExecutor (std::string& NameExecutor);
-    // Handles special cases and returns executors
-    ForthCommands* HandlingSpecialCases (std::string& NameExecutor);
+    static Factory& get();
+ 
+    ForthCommands* CreateExecutor(std::string& NameExecutor);
+ 
+    bool RegisterGenerator(std::string typeName, const ForthExecutorsGenerator& funcCreate);
 private:
-    // Map storing existing commands
-    // Returns executor by command name
-    std::map <std::string, ForthCommands*(*)()> ExistingCommands;
+    Factory() = default;
+    Factory(const Factory&);
+    ~Factory() = default;;
+ 
+    std::map<std::string, ForthExecutorsGenerator> ExistingCommands;
 };
