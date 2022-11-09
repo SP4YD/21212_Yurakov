@@ -3,6 +3,9 @@
 bool OperatorDoLoop::Run () {
     int i;
     int N;
+
+    NameCommand.erase(NameCommand.begin(), NameCommand.begin() + 3);
+    NameCommand.erase(NameCommand.end() - 7, NameCommand.end());
     
     (*CommandsForSecondProcessing).clear();
 

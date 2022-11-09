@@ -2,12 +2,14 @@
 
 #include <iostream>
 #include <stack>
+#include <memory>
 
 #include "Parser.hpp"
 #include "Factory.hpp"
 #include "ForthCommands.hpp"
 #include "FuncIsNumber.hpp"
 
+// Executes the passed string
+bool ForthInterpreter(std::string str);
+
 int main();
-// Performs secondary processing of transmitted commands
-bool SecondaryProcessing (std::string* comm, std::stack <int>* generalStack);

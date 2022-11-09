@@ -1,5 +1,7 @@
 #pragma once
 
+#include <climits>
+
 #include "ForthCommands.hpp"
 // Push number on stack
 // Pushes the result on the stack

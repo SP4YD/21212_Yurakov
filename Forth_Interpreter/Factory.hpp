@@ -3,6 +3,8 @@
 #include <string>
 #include <map>
 #include <utility>
+
+#include "exceptions.hpp"
  // The factory was taken from the https://derydoca.com/2019/03/c-tutorial-auto-registering-factory/
 class ForthCommands;
  

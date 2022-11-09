@@ -9,6 +9,9 @@ ForthCommands* Factory::CreateExecutor(std::string& NameExecutor) {
     if (ExistingCommands.find (NameExecutor) != ExistingCommands.end()) {
         return ExistingCommands[NameExecutor]();
     }
+    else {
+        throw my_exception (UnknownCommand);
+    }
  
     return nullptr;
 }

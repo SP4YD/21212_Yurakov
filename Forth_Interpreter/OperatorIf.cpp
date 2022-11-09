@@ -1,6 +1,9 @@
 #include "OperatorIf.hpp"
 
 bool OperatorIf::Run () {
+    NameCommand.erase(NameCommand.begin(), NameCommand.begin() + 3);
+    NameCommand.erase(NameCommand.end() - 7, NameCommand.end());
+
     if (Stack->empty()) {
         throw my_exception (EmptyStack);    
     }
@@ -11,16 +14,14 @@ bool OperatorIf::Run () {
     std::string beforeElse;
     std::string afterElse;
 
-    int countIf = 1;
-    int countThen = 0;
-    int countSemicolon = 0;
+    int balanceIfThen = 1;
 
-    while (ist >> tmp && !((countIf - countThen == 1) && (tmp == "else"))) {
+    while (ist >> tmp && !((balanceIfThen == 1) && (tmp == "else"))) {
         if (tmp == "if") {
-            countIf++;
+            balanceIfThen++;
         }
         else if (tmp == "then") {
-            countThen++;
+            balanceIfThen--;
         }
 
         beforeElse += tmp + " ";
