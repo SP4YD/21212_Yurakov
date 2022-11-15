@@ -2,6 +2,7 @@
 
 #include <string>
 #include <climits>
+#include <stdexcept>
 
 #include "exceptions.hpp"
 // Checks whether this string is a number

@@ -2,14 +2,14 @@
 
 bool Multip::Run () {
     if (Stack->empty ()) {
-        throw my_exception(EmptyStack);
+        throw Exception_EmptyStack();
     }
 
     int a = Stack->top ();
     Stack->pop ();
 
     if (Stack->empty ()) {
-        throw my_exception(EmptyStack);
+        throw Exception_EmptyStack();
     }
 
     int b = Stack->top ();

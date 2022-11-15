@@ -2,7 +2,7 @@
 
 bool Drop::Run () {
     if (Stack->empty()){
-        throw my_exception(EmptyStack);
+        throw Exception_EmptyStack();
     }
 
     Stack->pop ();

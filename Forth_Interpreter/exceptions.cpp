@@ -1,19 +1,37 @@
 #include "exceptions.hpp"
 
-my_exception::my_exception(const TypeErrors err) {
-    if (err == EmptyStack) {
-        Msg = "There are not enough elements in the stack";
-    }
-    else if (err == UnknownCommand) {
-        Msg = "Unknown command";
-    }
+Exception_EmptyStack::Exception_EmptyStack() {
+    Msg = "There are not enough elements in the stack";
 }
 
-my_exception::my_exception(const std::string msg) {
-    Msg = msg;
+Exception_UnknownCommand::Exception_UnknownCommand() {
+    Msg = "Unknown command";
 }
 
-const char* my_exception::what() const throw () 
+Exception_DivisionByZero::Exception_DivisionByZero() {
+    Msg = "Division by zero";
+}
+
+Exception_SyntaxError::Exception_SyntaxError() {
+    Msg = "Division by zero";
+}
+
+const char* Exception_EmptyStack::what() const throw () 
+{
+    return Msg.c_str();
+}
+
+const char* Exception_UnknownCommand::what() const throw () 
+{
+    return Msg.c_str();
+}
+
+const char* Exception_DivisionByZero::what() const throw () 
+{
+    return Msg.c_str();
+}
+
+const char* Exception_SyntaxError::what() const throw () 
 {
     return Msg.c_str();
 }

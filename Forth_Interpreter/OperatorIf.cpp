@@ -1,14 +1,14 @@
 #include "OperatorIf.hpp"
 
 bool OperatorIf::Run () {
-    NameCommand.erase(NameCommand.begin(), NameCommand.begin() + 3);
-    NameCommand.erase(NameCommand.end() - 7, NameCommand.end());
+    CommandText.erase(CommandText.begin(), CommandText.begin() + 3);
+    CommandText.erase(CommandText.end() - 7, CommandText.end());
 
     if (Stack->empty()) {
-        throw my_exception (EmptyStack);    
+        throw Exception_EmptyStack();    
     }
     
-    std::istringstream ist (NameCommand);
+    std::istringstream ist (CommandText);
 
     std::string tmp;
     std::string beforeElse;

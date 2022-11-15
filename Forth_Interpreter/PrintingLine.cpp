@@ -1,10 +1,10 @@
 #include "PrintingLine.hpp"
 
 bool PrintingLine::Run () {
-    NameCommand.erase(NameCommand.begin(), NameCommand.begin() + 3);
-    NameCommand.pop_back();
+    CommandText.erase(CommandText.begin(), CommandText.begin() + 3);
+    CommandText.pop_back();
 
-    std::cout << NameCommand << " ";
+    *Output << CommandText << " ";
 
     return true;
 }

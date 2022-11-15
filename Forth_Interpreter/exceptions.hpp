@@ -1,19 +1,38 @@
 #pragma once
 
 #include <string>
-
-enum TypeErrors {
-    EmptyStack,
-    UnknownCommand
-};
-
-class my_exception : public std::exception {
+// An exception is when there are not enough numbers in the stack
+class Exception_EmptyStack : public std::exception {
 public:
-    // Returns an error depending on the type of error
-    my_exception(const TypeErrors err);
-    // Returns an error with the text that was passed
-    my_exception(const std::string msg);
-    
+    Exception_EmptyStack();
+
+   virtual const char* what() const throw ();
+private:
+   std::string Msg;
+};
+// The exception is when a team came that is not in the database
+class Exception_UnknownCommand : public std::exception {
+public:
+    Exception_UnknownCommand();
+
+   virtual const char* what() const throw ();
+private:
+   std::string Msg;
+};
+// The exception is when an attempt was made to divide by zero
+class Exception_DivisionByZero : public std::exception {
+public:
+    Exception_DivisionByZero();
+
+   virtual const char* what() const throw ();
+private:
+   std::string Msg;
+};
+// Exception when a syntax error was made
+class Exception_SyntaxError : public std::exception {
+public:
+    Exception_SyntaxError();
+
    virtual const char* what() const throw ();
 private:
    std::string Msg;

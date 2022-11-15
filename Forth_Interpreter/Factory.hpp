@@ -12,15 +12,16 @@ typedef ForthCommands*(*ForthExecutorsGenerator)();
 
 class Factory {
 public:
+    // Returns the only shared instance of the factory
     static Factory& get();
- 
+    // Creates the executor of the required command
     ForthCommands* CreateExecutor(std::string& NameExecutor);
- 
+    // Registers functions in the database
     bool RegisterGenerator(std::string typeName, const ForthExecutorsGenerator& funcCreate);
 private:
     Factory() = default;
     Factory(const Factory&);
     ~Factory() = default;;
- 
+
     std::map<std::string, ForthExecutorsGenerator> ExistingCommands;
 };

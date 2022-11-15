@@ -2,10 +2,10 @@
 
 bool Point::Run () {
     if (Stack->empty()){
-        throw my_exception(EmptyStack);
+        throw Exception_EmptyStack();
     }
 
-    std::cout << Stack->top () << " ";
+    *Output << Stack->top () << " ";
     Stack->pop ();
 
     return true;

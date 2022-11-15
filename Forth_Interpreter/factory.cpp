@@ -10,7 +10,7 @@ ForthCommands* Factory::CreateExecutor(std::string& NameExecutor) {
         return ExistingCommands[NameExecutor]();
     }
     else {
-        throw my_exception (UnknownCommand);
+        throw Exception_UnknownCommand();
     }
  
     return nullptr;

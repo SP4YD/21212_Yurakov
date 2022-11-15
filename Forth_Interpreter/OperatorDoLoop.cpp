@@ -4,26 +4,26 @@ bool OperatorDoLoop::Run () {
     int i;
     int N;
 
-    NameCommand.erase(NameCommand.begin(), NameCommand.begin() + 3);
-    NameCommand.erase(NameCommand.end() - 7, NameCommand.end());
+    CommandText.erase(CommandText.begin(), CommandText.begin() + 3);
+    CommandText.erase(CommandText.end() - 7, CommandText.end());
     
     (*CommandsForSecondProcessing).clear();
 
     if (Stack->empty()) {
-        throw my_exception (EmptyStack);    
+        throw Exception_EmptyStack();    
     }
 
     i = Stack->top();
     Stack->pop();
 
     if (Stack->empty()) {
-        throw my_exception (EmptyStack);    
+        throw Exception_EmptyStack();    
     }
 
     N = Stack->top();
     Stack->pop();
 
-    std::istringstream ist (NameCommand);
+    std::istringstream ist (CommandText);
     std::string tmp;
     std::vector <int> indexesI;
     int balanceDoLoop = 1;
@@ -56,18 +56,18 @@ bool OperatorDoLoop::Run () {
     }
 
     std::string result;
-    std::string pattern = NameCommand;
+    std::string pattern = CommandText;
 
     for (; i < N; ++i) {
-        NameCommand = pattern;
+        CommandText = pattern;
         std::ostringstream ost;
         ost << i;
 
         for (int j = indexesI.size() - 1; j >= 0 ; --j) {
-            NameCommand.replace(indexesI[j], 1, ost.str());
+            CommandText.replace(indexesI[j], 1, ost.str());
         }
 
-        result += NameCommand + " ";
+        result += CommandText + " ";
     }
 
     if (result.length() > 0) {

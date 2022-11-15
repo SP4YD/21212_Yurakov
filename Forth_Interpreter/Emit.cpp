@@ -2,10 +2,10 @@
 
 bool Emit::Run () {
     if (Stack->empty()){
-        throw my_exception(EmptyStack);
+        throw Exception_EmptyStack();
     }
 
-    std::cout << (char)Stack->top () << " ";
+    *Output << (char)Stack->top () << " ";
     Stack->pop ();
 
     return true;

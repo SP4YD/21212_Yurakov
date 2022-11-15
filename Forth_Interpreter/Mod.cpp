@@ -2,21 +2,21 @@
 
 bool Mod::Run () {
     if (Stack->empty ()) {
-        throw my_exception(EmptyStack);
+        throw Exception_EmptyStack();
     }
 
     int a = Stack->top ();
     Stack->pop ();
 
     if (Stack->empty ()) {
-        throw my_exception(EmptyStack);
+        throw Exception_EmptyStack();
     }
 
     int b = Stack->top ();
     Stack->pop ();
 
     if (a == 0) {
-        throw my_exception ("Division by zero");
+        throw Exception_DivisionByZero();
     }
 
     Stack->push (b % a);

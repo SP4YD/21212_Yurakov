@@ -19,7 +19,7 @@ std::vector <std::string> Parser (const std::string str) {
             result.clear();
 
             if (splitStr[splitStr.size() - 1].back() != '"') {
-                throw my_exception ("Not found closing quotes");
+                throw Exception_SyntaxError();
             }
         }
         else if (tmp == "if") {
@@ -76,20 +76,9 @@ void ParserIf (std::string& result,
     splitStr.push_back (result);
     result.clear();
 
-    if (countElse > countIf) {
-        throw my_exception ("Amount \"else\" turned out to be more than \"if\"");
-    }
-    if (countIf > countThen) { 
-        throw my_exception ("Not found closing \"then\"");
-    }
-    else if (countIf < countThen) {
-        throw my_exception ("Amount \"then\" turned out to be more than \"if\"");
-    }
-    else if (countIf > countSemicolon) {
-        throw my_exception ("Not found closing \";\"");
-    }
-    else if (countIf < countSemicolon) {
-        throw my_exception ("Amount \";\" turned out to be more than \"if\"");
+    if (countElse > countIf || countIf > countThen || countIf < countThen || 
+        countIf > countSemicolon || countIf < countSemicolon) {
+        throw Exception_SyntaxError();
     }
 }
 
@@ -133,16 +122,8 @@ void ParserDo (std::string& result,
     splitStr.push_back (result);
     result.clear();
 
-    if (countDo > countLoop) { 
-        throw my_exception ("Not found closing \"loop\"");
-    }
-    else if (countDo < countLoop) {
-        throw my_exception ("Amount \"loop\" turned out to be more than \"do\"");
-    }
-    else if (countDo > (countSemicolon - countThen)) {
-        throw my_exception ("Not found closing \";\"");
-    }
-    else if (countDo < (countSemicolon - countThen)) {
-        throw my_exception ("Amount \";\" turned out to be more than \"do\"");
+    if (countDo > countLoop || countDo < countLoop ||
+        countDo > (countSemicolon - countThen) || countDo < (countSemicolon - countThen)) { 
+        throw Exception_SyntaxError();
     }
 }

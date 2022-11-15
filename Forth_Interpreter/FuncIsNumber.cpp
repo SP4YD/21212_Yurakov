@@ -21,7 +21,7 @@ bool IsNumber(std::string str) {
     }
 
     if (num > INT_MAX) {
-        throw my_exception("Stack overflow");
+        throw std::overflow_error("Stack overflow!");
     }
     
     return true;

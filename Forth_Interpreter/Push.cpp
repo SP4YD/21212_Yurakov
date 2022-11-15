@@ -1,7 +1,7 @@
 #include "Push.hpp"
 
 bool Push::Run () {
-    Stack->push (stoi(NameCommand));
+    Stack->push (stoi(CommandText));
 
     return false;
 }
