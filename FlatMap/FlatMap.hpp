@@ -1,6 +1,10 @@
 #pragma once
 
-#include <iostream>
+#include <string>
+
+namespace {
+  constexpr int Multiplier_Capacity = 2;
+}
 
 // Key - type string
 typedef std::string sKey;

@@ -1,5 +1,8 @@
 #include "FlatMap.hpp"
-#define Multiplier_Capacity 2
+
+#include <utility>
+#include <algorithm>
+#include <stdexcept>
 
 TValue::TValue () {
   Age = 0;
