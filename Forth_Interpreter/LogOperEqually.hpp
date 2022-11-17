@@ -1,7 +1,7 @@
 #pragma once
 
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Compares the equality of the first number on the stack and the second
 // Pushes the result on the stack
 // 0 - second != first

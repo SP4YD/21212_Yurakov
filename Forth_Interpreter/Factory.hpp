@@ -1,10 +1,8 @@
 #pragma once
 
-#include <string>
-#include <map>
-#include <utility>
-
 #include "exceptions.hpp"
+
+#include <map>
  // The factory was taken from the https://derydoca.com/2019/03/c-tutorial-auto-registering-factory/
 class ForthCommands;
  
@@ -15,9 +13,9 @@ public:
     // Returns the only shared instance of the factory
     static Factory& get();
     // Creates the executor of the required command
-    ForthCommands* CreateExecutor(std::string& NameExecutor);
+    ForthCommands* CreateInstance(const std::string NameInstance);
     // Registers functions in the database
-    bool RegisterGenerator(std::string typeName, const ForthExecutorsGenerator& funcCreate);
+    bool RegisterGenerator(const std::string typeName, const ForthExecutorsGenerator& funcCreate);
 private:
     Factory() = default;
     Factory(const Factory&);

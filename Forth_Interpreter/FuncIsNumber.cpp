@@ -1,26 +1,24 @@
 #include "FuncIsNumber.hpp"
 
-bool IsNumber(std::string str) {
-    size_t num = 0;
+#include <stdexcept>
+#include <string>
+#include <climits>
 
-    if (((str[0] == '-') && str.length() > 1) || (str[0] >= '0' && str[0] <= '9')) {
-        if (str[0] != '-') {
-            num *= 10;
-            num += str[0] - '0';
-        }
+bool IsNumber(const std::string str) {
+    if (((str[0] == '-') && str.length() > 1) || isdigit(str[0])) {
         for (unsigned int i = 1; i < str.length(); ++i) {
-            if (str[i] < '0' || str[i] > '9') {
+            if (!isdigit(str[0])) {
                 return false;
             }
-            num *= 10;
-            num += str[i] - '0';
         }
     }
     else {
         return false;
     }
 
-    if (num > INT_MAX) {
+    long long num = stoll(str);
+
+    if (num > INT_MAX || num < INT_MIN) {
         throw std::overflow_error("Stack overflow!");
     }
     

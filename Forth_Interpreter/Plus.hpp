@@ -1,7 +1,7 @@
 #pragma once
 
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Adds the first number from the stack with the second
 // Pushes the result on the stack
 class Plus : public ForthCommands {

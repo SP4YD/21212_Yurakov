@@ -1,7 +1,6 @@
 #pragma once
 
-#include <iostream>
-
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
 // Contains a command that outputs a string
 class PrintingLine: public ForthCommands {

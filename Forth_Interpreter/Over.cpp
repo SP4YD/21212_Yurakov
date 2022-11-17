@@ -1,21 +1,23 @@
 #include "Over.hpp"
 
+#include <memory>
+
 bool Over::Run () {
-    if (Stack->empty()){
+    if (GeneralDataForExecutors.Stack->empty()){
         throw Exception_EmptyStack();
     }
 
-    int a = Stack->top();
-    Stack->pop ();
+    int a = GeneralDataForExecutors.Stack->top();
+    GeneralDataForExecutors.Stack->pop ();
 
-    if (Stack->empty()){
+    if (GeneralDataForExecutors.Stack->empty()){
         throw Exception_EmptyStack();
     }
 
-    int b = Stack->top();
+    int b = GeneralDataForExecutors.Stack->top();
 
-    Stack->push (a);
-    Stack->push (b);
+    GeneralDataForExecutors.Stack->push (a);
+    GeneralDataForExecutors.Stack->push (b);
     
     return false;
 }

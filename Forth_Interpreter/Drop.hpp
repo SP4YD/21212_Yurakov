@@ -1,7 +1,7 @@
 #pragma once
 
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Removes the top number from the stack
 class Drop : public ForthCommands {
 public:

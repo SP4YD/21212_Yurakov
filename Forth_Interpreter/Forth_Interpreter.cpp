@@ -1,35 +1,42 @@
+#include "Factory.hpp"
 #include "Forth_Interpreter.hpp"
+#include "FuncIsNumber.hpp"
+#include "Parser.hpp"
 
-bool ForthInterpreter::InterpretCommand(std::string str) {
-    std::shared_ptr<ForthCommands> executableCommand;
+#include <fstream>
+#include <iostream>
+#include <stack>
+#include <vector>
+
+bool ForthInterpreter::InterpretCommand(const std::string str) {
+    std::unique_ptr<ForthCommands> executableCommand;
     std::string commandText;
-    std::shared_ptr<std::string> commandsForSecondProcessing = std::make_shared<std::string>();
+    std::unique_ptr<std::string> commandsForSecondProcessing = std::make_unique<std::string>();
     bool someCout = false;
 
     std::vector <std::string> commands = Parser (str);
 
+    GeneralData gendata (Stack.get(), commandText, 
+                         commandsForSecondProcessing.get(), &In, &Out);
 
     for (unsigned int i = 0; i < commands.size(); ++i) {
         if (IsNumber(commands[i])) {
-            commandText = commands[i];
+            gendata.CommandText = commands[i];
             commands[i] = "push";
         } else if (commands[i].length() > 1 && commands[i][0] == '.' && commands[i][1] == '"') {
-            commandText = commands[i];
+            gendata.CommandText = commands[i];
             commands[i] = ".\"";
         } else if (commands[i].length() > 1 && commands[i][0] == 'i' && commands[i][1] == 'f') {
-            commandText = commands[i];
+            gendata.CommandText = commands[i];
             commands[i] = "if";
         } else if (commands[i].length() > 1 && commands[i][0] == 'd' && commands[i][1] == 'o') {
-            commandText = commands[i];
+            gendata.CommandText = commands[i];
             commands[i] = "do";
         }
 
         commandsForSecondProcessing->clear();
-        executableCommand = (std::shared_ptr<ForthCommands>) Factory::get().CreateExecutor (commands[i]);
-        executableCommand->AddStack (Stack);
-        executableCommand->AddInputOutput (&In, &Out);
-        executableCommand->AddCommandsForSecondProcessing (commandsForSecondProcessing);
-        executableCommand->AddCommandText (commandText);
+        executableCommand = (std::unique_ptr<ForthCommands>) Factory::get().CreateInstance (commands[i]);
+        executableCommand->AddGeneralData (gendata);
         someCout += executableCommand->Run();
 
         if (commandsForSecondProcessing != nullptr && commandsForSecondProcessing->length() > 0) {
@@ -42,15 +49,16 @@ bool ForthInterpreter::InterpretCommand(std::string str) {
 
 ForthInterpreter::ForthInterpreter(std::istream& in, std::ostream& out) : In (in), Out (out) {};
 
-void ForthInterpreter::InterpretString(std::string str) {
+void ForthInterpreter::InterpretString(const std::string str) {
+    Stack = std::make_unique<std::stack <int>>();
     InterpretCommand(str);
 }
 
-void ForthInterpreter::RunInterpretation(bool CinCout) {
+void ForthInterpreter::RunInterpretation(const bool CinCout) {
 
     bool someCout;
     std::string str;
-    Stack = std::make_shared<std::stack <int>>();
+    Stack = std::make_unique<std::stack <int>>();
 
     if (CinCout) {
         Out << "> ";

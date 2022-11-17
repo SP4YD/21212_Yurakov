@@ -1,5 +1,7 @@
 #include "exceptions.hpp"
 
+#include <string>
+
 Exception_EmptyStack::Exception_EmptyStack() {
     Msg = "There are not enough elements in the stack";
 }

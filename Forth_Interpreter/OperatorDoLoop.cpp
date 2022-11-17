@@ -1,29 +1,32 @@
 #include "OperatorDoLoop.hpp"
 
+#include <sstream>
+#include <vector>
+
 bool OperatorDoLoop::Run () {
     int i;
     int N;
 
-    CommandText.erase(CommandText.begin(), CommandText.begin() + 3);
-    CommandText.erase(CommandText.end() - 7, CommandText.end());
+    GeneralDataForExecutors.CommandText.erase(GeneralDataForExecutors.CommandText.begin(), GeneralDataForExecutors.CommandText.begin() + 3);
+    GeneralDataForExecutors.CommandText.erase(GeneralDataForExecutors.CommandText.end() - 7, GeneralDataForExecutors.CommandText.end());
     
-    (*CommandsForSecondProcessing).clear();
+    (*GeneralDataForExecutors.CommandsForSecondProcessing).clear();
 
-    if (Stack->empty()) {
+    if (GeneralDataForExecutors.Stack->empty()) {
         throw Exception_EmptyStack();    
     }
 
-    i = Stack->top();
-    Stack->pop();
+    i = GeneralDataForExecutors.Stack->top();
+    GeneralDataForExecutors.Stack->pop();
 
-    if (Stack->empty()) {
+    if (GeneralDataForExecutors.Stack->empty()) {
         throw Exception_EmptyStack();    
     }
 
-    N = Stack->top();
-    Stack->pop();
+    N = GeneralDataForExecutors.Stack->top();
+    GeneralDataForExecutors.Stack->pop();
 
-    std::istringstream ist (CommandText);
+    std::istringstream ist (GeneralDataForExecutors.CommandText);
     std::string tmp;
     std::vector <int> indexesI;
     int balanceDoLoop = 1;
@@ -56,25 +59,25 @@ bool OperatorDoLoop::Run () {
     }
 
     std::string result;
-    std::string pattern = CommandText;
+    std::string pattern = GeneralDataForExecutors.CommandText;
 
     for (; i < N; ++i) {
-        CommandText = pattern;
+        GeneralDataForExecutors.CommandText = pattern;
         std::ostringstream ost;
         ost << i;
 
         for (int j = indexesI.size() - 1; j >= 0 ; --j) {
-            CommandText.replace(indexesI[j], 1, ost.str());
+            GeneralDataForExecutors.CommandText.replace(indexesI[j], 1, ost.str());
         }
 
-        result += CommandText + " ";
+        result += GeneralDataForExecutors.CommandText + " ";
     }
 
     if (result.length() > 0) {
         result.pop_back();
     }
 
-    *CommandsForSecondProcessing = result;
+    *GeneralDataForExecutors.CommandsForSecondProcessing = result;
 
     return false;
 }

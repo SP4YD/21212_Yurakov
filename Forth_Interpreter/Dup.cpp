@@ -1,11 +1,14 @@
 #include "Dup.hpp"
+#include "exceptions.hpp"
+
+#include <memory>
 
 bool Dup::Run () {
-    if (Stack->empty()){
+    if (GeneralDataForExecutors.Stack->empty()){
         throw Exception_EmptyStack();
     }
 
-    Stack->push (Stack->top());
+    GeneralDataForExecutors.Stack->push (GeneralDataForExecutors.Stack->top());
 
     return false;
 }

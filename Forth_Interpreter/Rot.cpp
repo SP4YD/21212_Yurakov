@@ -1,30 +1,32 @@
 #include "Rot.hpp"
 
+#include <memory>
+
 bool Rot::Run () {
-    if (Stack->empty()){
+    if (GeneralDataForExecutors.Stack->empty()){
         throw Exception_EmptyStack();
     }
 
-    int a = Stack->top();
-    Stack->pop ();
+    int a = GeneralDataForExecutors.Stack->top();
+    GeneralDataForExecutors.Stack->pop ();
 
-    if (Stack->empty()){
+    if (GeneralDataForExecutors.Stack->empty()){
         throw Exception_EmptyStack();
     }
 
-    int b = Stack->top();
-    Stack->pop ();
+    int b = GeneralDataForExecutors.Stack->top();
+    GeneralDataForExecutors.Stack->pop ();
 
-    if (Stack->empty()){
+    if (GeneralDataForExecutors.Stack->empty()){
         throw Exception_EmptyStack();
     }
 
-    int c = Stack->top();
-    Stack->pop ();
+    int c = GeneralDataForExecutors.Stack->top();
+    GeneralDataForExecutors.Stack->pop ();
 
-    Stack->push (a);
-    Stack->push (c);
-    Stack->push (b);
+    GeneralDataForExecutors.Stack->push (a);
+    GeneralDataForExecutors.Stack->push (c);
+    GeneralDataForExecutors.Stack->push (b);
 
     return false;
 }

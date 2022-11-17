@@ -1,12 +1,15 @@
 #include "Emit.hpp"
+#include "exceptions.hpp"
+
+#include <ostream>
 
 bool Emit::Run () {
-    if (Stack->empty()){
+    if (GeneralDataForExecutors.Stack->empty()){
         throw Exception_EmptyStack();
     }
 
-    *Output << (char)Stack->top () << " ";
-    Stack->pop ();
+    *GeneralDataForExecutors.Output << (char)GeneralDataForExecutors.Stack->top () << " ";
+    GeneralDataForExecutors.Stack->pop ();
 
     return true;
 }

@@ -1,7 +1,6 @@
 #pragma once
 
-#include <climits>
-
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
 // Push number on stack
 // Pushes the result on the stack

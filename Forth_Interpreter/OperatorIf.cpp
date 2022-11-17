@@ -1,14 +1,17 @@
 #include "OperatorIf.hpp"
 
-bool OperatorIf::Run () {
-    CommandText.erase(CommandText.begin(), CommandText.begin() + 3);
-    CommandText.erase(CommandText.end() - 7, CommandText.end());
+#include <memory>
+#include <sstream>
 
-    if (Stack->empty()) {
+bool OperatorIf::Run () {
+    GeneralDataForExecutors.CommandText.erase(GeneralDataForExecutors.CommandText.begin(), GeneralDataForExecutors.CommandText.begin() + 3);
+    GeneralDataForExecutors.CommandText.erase(GeneralDataForExecutors.CommandText.end() - 7, GeneralDataForExecutors.CommandText.end());
+
+    if (GeneralDataForExecutors.Stack->empty()) {
         throw Exception_EmptyStack();    
     }
     
-    std::istringstream ist (CommandText);
+    std::istringstream ist (GeneralDataForExecutors.CommandText);
 
     std::string tmp;
     std::string beforeElse;
@@ -35,11 +38,11 @@ bool OperatorIf::Run () {
         afterElse.pop_back();
     }
 
-    if (Stack->top()) {
-        *CommandsForSecondProcessing = beforeElse;
+    if (GeneralDataForExecutors.Stack->top()) {
+        *GeneralDataForExecutors.CommandsForSecondProcessing = beforeElse;
     }
     else {
-        *CommandsForSecondProcessing = afterElse;
+        *GeneralDataForExecutors.CommandsForSecondProcessing = afterElse;
     }
 
     return false;

@@ -1,6 +1,7 @@
-#include <gtest/gtest.h>
-#include "Forth_Interpreter.hpp"
 #include "exceptions.hpp"
+#include "Forth_Interpreter.hpp"
+
+#include <gtest/gtest.h>
 
 std::string GetOutput (std::stringstream& Out) {
 	std::string tmp;
@@ -33,10 +34,17 @@ TEST (PushTest, PushNumberOnStackWithoutPrint) {
 
 	EXPECT_EQ (GetOutput(Out), "< ok");
 }
-TEST (PushTest, PushNumberGreaterThanInt) {
+TEST (PushTest, PushNumberGreaterThanIntMax) {
 	std::stringstream In;
 	std::stringstream Out;
 	In << "2147483648";
+	ForthInterpreter interpreter(In, Out);
+	EXPECT_THROW (interpreter.RunInterpretation(false), std::overflow_error);
+}
+TEST (PushTest, PushNumberLessThanInt) {
+	std::stringstream In;
+	std::stringstream Out;
+	In << "-2147483649";
 	ForthInterpreter interpreter(In, Out);
 	EXPECT_THROW (interpreter.RunInterpretation(false), std::overflow_error);
 }

@@ -1,7 +1,7 @@
 #pragma once
 
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Cyclically shifts the top three numbers
 class Rot : public ForthCommands {
 public:

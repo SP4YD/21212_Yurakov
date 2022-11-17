@@ -1,9 +1,7 @@
 #pragma once
 
-#include <iostream>
-
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Moves to the next line
 class Cr : public ForthCommands {
 public:

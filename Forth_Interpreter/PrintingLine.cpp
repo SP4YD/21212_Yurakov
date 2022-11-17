@@ -1,10 +1,13 @@
 #include "PrintingLine.hpp"
 
-bool PrintingLine::Run () {
-    CommandText.erase(CommandText.begin(), CommandText.begin() + 3);
-    CommandText.pop_back();
+#include <ostream>
 
-    *Output << CommandText << " ";
+bool PrintingLine::Run () {
+    GeneralDataForExecutors.CommandText.erase(GeneralDataForExecutors.CommandText.begin(),
+                                              GeneralDataForExecutors.CommandText.begin() + 3);
+    GeneralDataForExecutors.CommandText.pop_back();
+
+    *GeneralDataForExecutors.Output << GeneralDataForExecutors.CommandText << " ";
 
     return true;
 }

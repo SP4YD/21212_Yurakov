@@ -1,7 +1,7 @@
 #pragma once
 
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Calculates the remainder of dividing the second number on the stack by the first
 // Pushes the result on the stack
 class Mod : public ForthCommands {

@@ -1,7 +1,7 @@
 #pragma once
 
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Copies the top of the stack and puts it on the top of the stack
 class Dup : public ForthCommands {
 public:

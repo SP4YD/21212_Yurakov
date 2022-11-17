@@ -1,10 +1,7 @@
 #pragma once
 
-#include <vector>
-
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "Parser.hpp"
-#include "exceptions.hpp"
 // if THEN_BRANCH then ;
 // If there is > 0 on the stack, THEN_BRANCH goes to secondary processing, else nothing
 //

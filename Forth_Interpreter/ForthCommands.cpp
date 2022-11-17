@@ -1,18 +1,11 @@
 #include "ForthCommands.hpp"
 
-void ForthCommands::AddInputOutput (std::istream* in, std::ostream* out) {
-    Input = in;
-    Output = out;
-}
+GeneralData::GeneralData (std::stack <int> *stack, std::string commandText, 
+                 std::string *commandsForSecondProcessing, std::istream *in, std::ostream *out) 
+                 : Stack(stack), CommandText(commandText), 
+                   CommandsForSecondProcessing(commandsForSecondProcessing),
+                   Input(in), Output(out) {}
 
-void ForthCommands::AddStack(std::shared_ptr<std::stack <int>> stack) {
-    Stack = stack;
-}
-
-void ForthCommands::AddCommandText(std::string commandText) {
-    CommandText = commandText;
-}
-
-void ForthCommands::AddCommandsForSecondProcessing (std::shared_ptr<std::string> commandsForSecondProcessing) {
-    CommandsForSecondProcessing = commandsForSecondProcessing;
+void ForthCommands::AddGeneralData (GeneralData gendata) {
+    GeneralDataForExecutors = gendata;
 }

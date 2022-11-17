@@ -1,14 +1,8 @@
 #pragma once
 
-#include <fstream>
-#include <iostream>
-#include <stack>
-#include <memory>
-
-#include "Parser.hpp"
-#include "Factory.hpp"
 #include "ForthCommands.hpp"
-#include "FuncIsNumber.hpp"
+
+#include <memory>
 
 class ForthInterpreter {
 public:
@@ -22,19 +16,19 @@ public:
 
     ~ForthInterpreter() = default;
     // Interpretation of a certain string
-    void InterpretString(std::string str);
+    void InterpretString(const std::string str);
     // Running the program from an unlimited number of lines
     // Accepts bool as input
     // true: istream = cin, ostream = cout
     // else false
-    void RunInterpretation(bool CinCout);
+    void RunInterpretation(const bool CinCout);
 private:
-    bool InterpretCommand(std::string str);
+    bool InterpretCommand(const std::string str);
 
     std::istream& In;
     std::ostream& Out;
 
-    std::shared_ptr<std::stack <int>> Stack;
+    std::unique_ptr<std::stack <int>> Stack;
 };
 
 int main(int argc, char** argv);

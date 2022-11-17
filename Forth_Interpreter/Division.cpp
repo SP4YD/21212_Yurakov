@@ -1,25 +1,28 @@
 #include "Division.hpp"
+#include "exceptions.hpp"
+
+#include <memory>
 
 bool Division::Run () {
-    if (Stack->empty ()) {
+    if (GeneralDataForExecutors.Stack->empty ()) {
         throw Exception_EmptyStack();
     }
 
-    int a = Stack->top ();
-    Stack->pop ();
+    int a = GeneralDataForExecutors.Stack->top ();
+    GeneralDataForExecutors.Stack->pop ();
 
-    if (Stack->empty ()) {
+    if (GeneralDataForExecutors.Stack->empty ()) {
         throw Exception_EmptyStack();
     }
 
-    int b = Stack->top ();
-    Stack->pop ();
+    int b = GeneralDataForExecutors.Stack->top ();
+    GeneralDataForExecutors.Stack->pop ();
 
     if (a == 0) {
         throw Exception_DivisionByZero();
     }
 
-    Stack->push(b / a);
+    GeneralDataForExecutors.Stack->push(b / a);
 
     return false;
 }

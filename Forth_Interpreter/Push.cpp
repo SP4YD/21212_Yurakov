@@ -1,7 +1,7 @@
 #include "Push.hpp"
 
 bool Push::Run () {
-    Stack->push (stoi(CommandText));
+    GeneralDataForExecutors.Stack->push (stoi(GeneralDataForExecutors.CommandText));
 
     return false;
 }

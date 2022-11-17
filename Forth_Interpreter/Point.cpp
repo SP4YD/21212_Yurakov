@@ -1,12 +1,15 @@
 #include "Point.hpp"
 
+#include <memory>
+#include <ostream>
+
 bool Point::Run () {
-    if (Stack->empty()){
+    if (GeneralDataForExecutors.Stack->empty()){
         throw Exception_EmptyStack();
     }
 
-    *Output << Stack->top () << " ";
-    Stack->pop ();
+    *GeneralDataForExecutors.Output << GeneralDataForExecutors.Stack->top () << " ";
+    GeneralDataForExecutors.Stack->pop ();
 
     return true;
 }

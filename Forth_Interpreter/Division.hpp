@@ -1,7 +1,7 @@
 #pragma once
 
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Division the first number from the stack from the second
 // Pushes the result on the stack
 class Division : public ForthCommands {

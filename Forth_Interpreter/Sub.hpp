@@ -1,7 +1,7 @@
 #pragma once
 
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Subtracts the first number from the stack from the second
 // Pushes the result on the stack
 class Sub : public ForthCommands {

@@ -1,7 +1,9 @@
 #include "Cr.hpp"
 
+#include <iostream>
+
 bool Cr::Run () {
-    *Output << std::endl << "< ";
+    *GeneralDataForExecutors.Output << std::endl << "< ";
 
     return true;
 }

@@ -1,4 +1,8 @@
+#include "exceptions.hpp"
 #include "Parser.hpp"
+
+#include <sstream>
+#include <vector>
 
 std::vector <std::string> Parser (const std::string str) {
     std::istringstream ist (str);

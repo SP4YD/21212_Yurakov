@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+
 // An exception is when there are not enough numbers in the stack
 class Exception_EmptyStack : public std::exception {
 public:

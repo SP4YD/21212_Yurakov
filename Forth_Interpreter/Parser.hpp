@@ -1,12 +1,9 @@
 #pragma once
 
-#include <string>
-#include <sstream>
 #include <vector>
 
-#include "exceptions.hpp"
 // Splits a string into commands
-std::vector <std::string> Parser (std::string str);
+std::vector <std::string> Parser (const std::string str);
 // Splits If in the necessary way
 void ParserIf (std::string& result,
                std::string& tmp, 

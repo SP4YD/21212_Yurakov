@@ -1,9 +1,7 @@
 #pragma once
 
-#include <iostream>
-
+#include "FactoryRegistrationCommands.hpp"
 #include "ForthCommands.hpp"
-#include "exceptions.hpp"
 // Prints the top number from the stack, and removes it
 class Point : public ForthCommands {
 public:
