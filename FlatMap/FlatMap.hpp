@@ -13,7 +13,7 @@ struct TValue {
   // Construct empty Value with age = 0, weight = 0
   TValue ();
   // Construct empty Value with the given input values
-  TValue (const size_t& age, const size_t& weight);
+  TValue (size_t age, size_t weight);
 
   friend bool operator!=(const TValue &a, const TValue &b);
   friend bool operator==(const TValue &a, const TValue &b);

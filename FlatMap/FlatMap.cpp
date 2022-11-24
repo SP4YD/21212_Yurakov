@@ -1,18 +1,12 @@
 #include "FlatMap.hpp"
 
-#include <utility>
 #include <algorithm>
 #include <stdexcept>
+#include <utility>
 
-TValue::TValue () {
-  Age = 0;
-  Weight = 0;
-}
+TValue::TValue () : TValue(0, 0) {}
 
-TValue::TValue (const size_t& age, const size_t& weight) {
-  Age = age;
-  Weight = weight;
-}
+TValue::TValue (size_t age, size_t weight) : Age(age), Weight(weight) {}
 
 bool operator!=(const TValue &a, const TValue &b) {
   return (b.Age != a.Age || b.Weight != a.Weight);
