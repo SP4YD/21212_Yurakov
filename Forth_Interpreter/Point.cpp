@@ -13,3 +13,7 @@ bool Point::Run () {
 
     return true;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Point> Command_point (".");
+}

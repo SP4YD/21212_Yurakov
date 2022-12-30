@@ -16,14 +16,14 @@ public:
 
     ~ForthInterpreter() = default;
     // Interpretation of a certain string
-    void InterpretString(const std::string str);
+    void InterpretString(const std::string& str);
     // Running the program from an unlimited number of lines
     // Accepts bool as input
     // true: istream = cin, ostream = cout
     // else false
     void RunInterpretation(const bool CinCout);
 private:
-    bool InterpretCommand(const std::string str);
+    bool InterpretCommand(const std::string& str);
 
     std::istream& In;
     std::ostream& Out;

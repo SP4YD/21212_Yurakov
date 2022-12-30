@@ -21,3 +21,7 @@ bool LogOperEqually::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<LogOperEqually> Command_logOperEqually ("=");
+}

@@ -21,3 +21,7 @@ bool Plus::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Plus> Command_plus ("+");
+}

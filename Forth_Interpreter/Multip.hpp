@@ -9,7 +9,3 @@ public:
     // Executing the invoked command
     bool Run () override;
 };
- 
-namespace ForthFactoryRegistrations {
-    FactoryRegistrationCommands<Multip> Command_multip ("*");
-}

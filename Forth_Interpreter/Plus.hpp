@@ -9,7 +9,3 @@ public:
     // Executing the invoked command
     bool Run () override;
 };
- 
-namespace ForthFactoryRegistrations {
-    FactoryRegistrationCommands<Plus> Command_plus ("+");
-}

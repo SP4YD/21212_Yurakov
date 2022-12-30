@@ -21,3 +21,7 @@ bool LogOperLess::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<LogOperLess> Command_logOperLess ("<");
+}

@@ -13,3 +13,7 @@ bool Emit::Run () {
 
     return true;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Emit> Command_emit ("emit");
+}

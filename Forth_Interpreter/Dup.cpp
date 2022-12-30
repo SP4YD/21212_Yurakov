@@ -12,3 +12,7 @@ bool Dup::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Dup> Command_dup ("dup");
+}

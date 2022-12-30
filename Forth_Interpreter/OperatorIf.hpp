@@ -12,7 +12,3 @@ public:
     // Executing the invoked command
     bool Run () override;
 };
-
-namespace ForthFactoryRegistrations {
-    FactoryRegistrationCommands<OperatorIf> Command_if ("if");
-}

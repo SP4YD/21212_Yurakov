@@ -30,3 +30,7 @@ bool Rot::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Rot> Command_rot ("rot");
+}

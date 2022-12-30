@@ -26,3 +26,7 @@ bool Division::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Division> Command_division ("/");
+}

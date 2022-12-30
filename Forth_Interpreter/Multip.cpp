@@ -21,3 +21,7 @@ bool Multip::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Multip> Command_multip ("*");
+}

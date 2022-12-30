@@ -21,3 +21,7 @@ bool Sub::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Sub> Command_sub ("-");
+}

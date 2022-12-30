@@ -21,3 +21,7 @@ bool Over::Run () {
     
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Over> Command_over ("over");
+}

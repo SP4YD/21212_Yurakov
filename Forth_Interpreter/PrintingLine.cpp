@@ -11,3 +11,7 @@ bool PrintingLine::Run () {
 
     return true;
 }
+
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<PrintingLine> Command_printLine (".\"");
+}

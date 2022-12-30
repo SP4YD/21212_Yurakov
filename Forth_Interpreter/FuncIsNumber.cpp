@@ -7,7 +7,7 @@
 bool IsNumber(const std::string str) {
     if (((str[0] == '-') && str.length() > 1) || isdigit(str[0])) {
         for (unsigned int i = 1; i < str.length(); ++i) {
-            if (!isdigit(str[0])) {
+            if (!isdigit(str[i])) {
                 return false;
             }
         }

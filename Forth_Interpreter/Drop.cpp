@@ -12,3 +12,7 @@ bool Drop::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Drop> Command_drop ("drop");
+}

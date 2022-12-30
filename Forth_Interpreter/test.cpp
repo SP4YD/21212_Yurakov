@@ -484,7 +484,7 @@ TEST (TestUnknownCommand, RandomCharacters) {
 	
 	EXPECT_THROW (interpreter.RunInterpretation(false), Exception_UnknownCommand);
 }
-TEST (TestUnknownCommand, ItLooksLikeTeamButNotThat_№1) {
+TEST (TestUnknownCommand, ItLooksLikeTeamButNotThat_1) {
 	std::stringstream In;
 	std::stringstream Out;
 	In << "moda";
@@ -492,7 +492,7 @@ TEST (TestUnknownCommand, ItLooksLikeTeamButNotThat_№1) {
 	
 	EXPECT_THROW (interpreter.RunInterpretation(false), Exception_UnknownCommand);
 }
-TEST (TestUnknownCommand, ItLooksLikeTeamButNotThat_№2) {
+TEST (TestUnknownCommand, ItLooksLikeTeamButNotThat_2) {
 	std::stringstream In;
 	std::stringstream Out;
 	In << "ifa";

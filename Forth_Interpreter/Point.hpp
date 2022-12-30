@@ -8,7 +8,3 @@ public:
     // Executing the invoked command
     bool Run () override;
 };
- 
-namespace ForthFactoryRegistrations {
-    FactoryRegistrationCommands<Point> Command_point (".");
-}

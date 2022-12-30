@@ -11,7 +11,3 @@ public:
     // Executing the invoked command
     bool Run () override;
 };
- 
-namespace ForthFactoryRegistrations {
-    FactoryRegistrationCommands<LogOperEqually> Command_logOperEqually ("=");
-}

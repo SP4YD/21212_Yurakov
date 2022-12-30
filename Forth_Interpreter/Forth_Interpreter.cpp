@@ -8,7 +8,7 @@
 #include <stack>
 #include <vector>
 
-bool ForthInterpreter::InterpretCommand(const std::string str) {
+bool ForthInterpreter::InterpretCommand(const std::string &str) {
     std::unique_ptr<ForthCommands> executableCommand;
     std::string commandText;
     std::unique_ptr<std::string> commandsForSecondProcessing = std::make_unique<std::string>();
@@ -35,7 +35,7 @@ bool ForthInterpreter::InterpretCommand(const std::string str) {
         }
 
         commandsForSecondProcessing->clear();
-        executableCommand = (std::unique_ptr<ForthCommands>) Factory::get().CreateInstance (commands[i]);
+        executableCommand.reset(Factory::get().CreateInstance (commands[i]));
         executableCommand->AddGeneralData (gendata);
         someCout += executableCommand->Run();
 
@@ -47,14 +47,14 @@ bool ForthInterpreter::InterpretCommand(const std::string str) {
     return someCout;
 }
 
-ForthInterpreter::ForthInterpreter(std::istream& in, std::ostream& out) : In (in), Out (out) {};
+ForthInterpreter::ForthInterpreter(std::istream& in, std::ostream& out) : In (in), Out (out) {}
 
-void ForthInterpreter::InterpretString(const std::string str) {
+void ForthInterpreter::InterpretString(const std::string& str) {
     Stack = std::make_unique<std::stack <int>>();
     InterpretCommand(str);
 }
 
-void ForthInterpreter::RunInterpretation(const bool CinCout) {
+void ForthInterpreter::RunInterpretation(bool CinCout) {
 
     bool someCout;
     std::string str;
@@ -78,7 +78,7 @@ void ForthInterpreter::RunInterpretation(const bool CinCout) {
     }
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv) {    
     if (argc == 1) {
         ForthInterpreter interpreter(std::cin, std::cout);
         interpreter.RunInterpretation(true);

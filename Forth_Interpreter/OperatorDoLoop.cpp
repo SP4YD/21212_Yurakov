@@ -4,9 +4,6 @@
 #include <vector>
 
 bool OperatorDoLoop::Run () {
-    int i;
-    int N;
-
     GeneralDataForExecutors.CommandText.erase(GeneralDataForExecutors.CommandText.begin(), GeneralDataForExecutors.CommandText.begin() + 3);
     GeneralDataForExecutors.CommandText.erase(GeneralDataForExecutors.CommandText.end() - 7, GeneralDataForExecutors.CommandText.end());
     
@@ -16,14 +13,14 @@ bool OperatorDoLoop::Run () {
         throw Exception_EmptyStack();    
     }
 
-    i = GeneralDataForExecutors.Stack->top();
+    int i = GeneralDataForExecutors.Stack->top();
     GeneralDataForExecutors.Stack->pop();
 
     if (GeneralDataForExecutors.Stack->empty()) {
         throw Exception_EmptyStack();    
     }
 
-    N = GeneralDataForExecutors.Stack->top();
+    int N = GeneralDataForExecutors.Stack->top();
     GeneralDataForExecutors.Stack->pop();
 
     std::istringstream ist (GeneralDataForExecutors.CommandText);
@@ -80,4 +77,8 @@ bool OperatorDoLoop::Run () {
     *GeneralDataForExecutors.CommandsForSecondProcessing = result;
 
     return false;
+}
+
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<OperatorDoLoop> Command_do ("do");
 }

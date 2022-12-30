@@ -5,3 +5,7 @@ bool Push::Run () {
 
     return false;
 }
+
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Push> Command_push ("push");
+}

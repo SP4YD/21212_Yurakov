@@ -47,3 +47,7 @@ bool OperatorIf::Run () {
 
     return false;
 }
+
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<OperatorIf> Command_if ("if");
+}

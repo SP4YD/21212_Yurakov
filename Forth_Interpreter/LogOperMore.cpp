@@ -21,3 +21,7 @@ bool LogOperMore::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<LogOperMore> Command_logOperMore (">");
+}

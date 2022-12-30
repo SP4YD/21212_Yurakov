@@ -25,3 +25,7 @@ bool Mod::Run () {
 
     return false;
 }
+ 
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Mod> Command_mod ("mod");
+}

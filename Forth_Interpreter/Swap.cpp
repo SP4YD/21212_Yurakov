@@ -21,3 +21,7 @@ bool Swap::Run () {
 
     return false;
 }
+
+namespace ForthFactoryRegistrations {
+    FactoryRegistrationCommands<Swap> Command_swap ("swap");
+}

@@ -2,8 +2,7 @@
 
 #include <stack>
 #include <string>
-#include <istream>
-#include <ostream>
+
 // A common set of data required by executor
 class GeneralData {
 public:

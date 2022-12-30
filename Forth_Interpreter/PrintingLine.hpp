@@ -8,7 +8,3 @@ public:
     // Executing the invoked command
     bool Run () override;
 };
-
-namespace ForthFactoryRegistrations {
-    FactoryRegistrationCommands<PrintingLine> Command_printLine (".\"");
-}
