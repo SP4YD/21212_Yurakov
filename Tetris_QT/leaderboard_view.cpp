@@ -11,15 +11,11 @@
 Leaderboard_View::Leaderboard_View(int score, bool *flag, QWidget *parent) :
     QDialog(parent),
     Table("./Leaderboard.txt"),
-    //FirstTime(flag),
     NeedHide(flag),
     ui(new Ui::Leaderboard_View),
     Score(score)
 {
     ui->setupUi(this);
-//    if (FirstTime) {
-//        NeedHide = false;
-//    }
 
     if (*NeedHide) {
         ui->lineEdit->hide();
