@@ -16,23 +16,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    gameover_view.cpp \
-    leaderboard_view.cpp \
-    main.cpp \
-    tetris.cpp \
-    tetris_view.cpp
+    dr_mario.cpp \
+    dr_mario_view.cpp \
+    main.cpp
 
 HEADERS += \
-    Blocks.h \
-    gameover_view.h \
-    leaderboard_view.h \
-    tetris.h \
-    tetris_view.h
+    Pills.h \
+    dr_mario.h \
+    dr_mario_view.h
 
 FORMS += \
-    gameover_view.ui \
-    leaderboard_view.ui \
-    tetris_view.ui
+    dr_mario_view.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -40,7 +34,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
-    img.qrc
-
-DISTFILES += \
-    image/Снимок экрана от 2022-12-22 18-33-48.png
+    images.qrc

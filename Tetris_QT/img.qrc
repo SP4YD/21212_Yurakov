@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>image/Cosmos.png</file>
-        <file>image/GameOver.jpg</file>
-        <file>image/TabletVertic(2).jpg</file>
-    </qresource>
-</RCC>
