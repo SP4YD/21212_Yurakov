@@ -1,6 +1,9 @@
 package ru.nsu.yurakov.Forth.Factory;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.nsu.yurakov.Forth.ForthCommands.ForthCommands;
+import ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,6 +17,7 @@ public class Factory {
      * @throws RuntimeException If it was not possible to create a factory
      */
     public static Factory GetFactory() throws RuntimeException {
+        LOGGER.info("Was launched GetFactory");
         if (Instance == null) {
             Instance = new Factory();
         }
@@ -21,6 +25,7 @@ public class Factory {
     }
 
     private Factory() throws RuntimeException {
+        LOGGER.info("Was launched Factory Constructor");
         Path = new Properties();
         CreatedInstances = new HashMap<>();
         try (InputStream file = ForthCommands.class.getClassLoader().getResourceAsStream(Config)) {
@@ -36,6 +41,7 @@ public class Factory {
      * @throws ClassNotFoundException If it was not possible to create an instance with the given name
      */
     public Object CreateInstance(String NameInstance) throws ClassNotFoundException {
+        LOGGER.info("Was launched CreateInstance(" + NameInstance + ")");
         try {
             Class<?> needClass = null;
             if (CreatedInstances.containsKey(NameInstance)) {
@@ -56,4 +62,6 @@ public class Factory {
     private final String Config = "PathFile.cfg";
     private Properties Path = null;
     private HashMap<String, Class<?>> CreatedInstances = null;
+
+    private static final Logger LOGGER = LogManager.getLogger(Factory.class);
 }

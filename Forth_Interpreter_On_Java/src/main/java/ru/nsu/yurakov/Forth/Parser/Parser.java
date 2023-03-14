@@ -1,4 +1,7 @@
 package ru.nsu.yurakov.Forth.Parser;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
 
 /**
@@ -11,6 +14,7 @@ public class Parser {
      * @throws RuntimeException If there were syntax errors in the if or do loop
      */
     public static ArrayList<String> Parsing (String str) throws RuntimeException{
+        LOGGER.info("Was launched Parsing(" + str + ")");
         ArrayList <String> splitStr = new ArrayList<>();
         String[] commands = str.split(" ");
 
@@ -60,6 +64,7 @@ public class Parser {
                                              int countCommand, 
                                              ArrayList<String> splitStr, 
                                              String[] commands) throws RuntimeException {
+        LOGGER.info("Was launched ParsingIf");
         result = "if";
         int countIf = 1;
         int countThen = 0;
@@ -110,6 +115,7 @@ public class Parser {
                                             int countCommand, 
                                             ArrayList<String> splitStr, 
                                             String[] commands) throws RuntimeException {
+        LOGGER.info("Was launched ParsingDo");
         result = "do";
         int countDo = 1;
         int countLoop = 0;
@@ -154,4 +160,6 @@ public class Parser {
 
         return splitStr;
     }
+
+    private static final Logger LOGGER = LogManager.getLogger(Parser.class);
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.nsu.yurakov.Forth.Drop.DropTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-13T11:07:16" hostname="spayd-IdeaPad-Gaming-3-15ARH05" time="0.001">
+<testsuite name="ru.nsu.yurakov.Forth.Drop.DropTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-14T18:39:50" hostname="spayd-IdeaPad-Gaming-3-15ARH05" time="0.003">
   <properties/>
-  <testcase name="DropTests()" classname="ru.nsu.yurakov.Forth.Drop.DropTest" time="0.001"/>
+  <testcase name="DropTests()" classname="ru.nsu.yurakov.Forth.Drop.DropTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,5 +1,7 @@
 package ru.nsu.yurakov.Forth.Swap;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.nsu.yurakov.Forth.ForthCommands.ForthCommands;
 import ru.nsu.yurakov.Forth.ForthRuntimeException.ForthRuntimeException;
 
@@ -10,6 +12,7 @@ public class Swap extends ForthCommands{
 
     @Override
     public boolean Run() throws ForthRuntimeException {
+        LOGGER.info("Was launched " + this.getClass().getName());
         int a = 0;
         int b = 0;
         try {
@@ -31,5 +34,6 @@ public class Swap extends ForthCommands{
 
         return false;
     }
-    
+
+    private static final Logger LOGGER = LogManager.getLogger(Swap.class);
 }

@@ -2,6 +2,8 @@ package ru.nsu.yurakov.Forth.OperatorIf;
 
 import java.util.EmptyStackException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.nsu.yurakov.Forth.ForthCommands.ForthCommands;
 import ru.nsu.yurakov.Forth.ForthRuntimeException.ForthRuntimeException;
 
@@ -16,6 +18,7 @@ public class OperatorIf extends ForthCommands{
     
     @Override
     public boolean Run() throws ForthRuntimeException {
+        LOGGER.info("Was launched " + this.getClass().getName() + " <" + GeneralDataForExecutors.CommandText + ">");
         try {
             String command = GeneralDataForExecutors.CommandText;
             command = command.substring(3, command.length() - 7);
@@ -67,4 +70,6 @@ public class OperatorIf extends ForthCommands{
 
         return false;
     }
+
+    private static final Logger LOGGER = LogManager.getLogger(OperatorIf.class);
 }

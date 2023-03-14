@@ -79,6 +79,7 @@ loadScripts(document, 'script');</script>
 <hr>
 <div class="type-signature"><span class="modifiers">public class </span><span class="element-name type-name-label">Emit</span>
 <span class="extends-implements">extends <a href="../ForthCommands/ForthCommands.html" title="class in ru.nsu.yurakov.Forth.ForthCommands">ForthCommands</a></span></div>
+<div class="block">Prints the top number on the stack as an ASCII code and removes it from the stack</div>
 </section>
 <section class="summary">
 <ul class="summary-list">
@@ -117,7 +118,9 @@ loadScripts(document, 'script');</script>
 <div class="table-header col-last">Description</div>
 <div class="col-first even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code>boolean</code></div>
 <div class="col-second even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4"><code><a href="#Run()" class="member-name-link">Run</a>()</code></div>
-<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">&nbsp;</div>
+<div class="col-last even-row-color method-summary-table method-summary-table-tab2 method-summary-table-tab4">
+<div class="block">Executing the invoked command</div>
+</div>
 </div>
 </div>
 </div>
@@ -157,11 +160,15 @@ loadScripts(document, 'script');</script>
 <h3>Run</h3>
 <div class="member-signature"><span class="modifiers">public</span>&nbsp;<span class="return-type">boolean</span>&nbsp;<span class="element-name">Run</span>()
             throws <span class="exceptions"><a href="../ForthRuntimeException/ForthRuntimeException.html" title="class in ru.nsu.yurakov.Forth.ForthRuntimeException">ForthRuntimeException</a></span></div>
+<div class="block"><span class="descfrm-type-label">Description copied from class:&nbsp;<code><a href="../ForthCommands/ForthCommands.html#Run()">ForthCommands</a></code></span></div>
+<div class="block">Executing the invoked command</div>
 <dl class="notes">
 <dt>Specified by:</dt>
 <dd><code><a href="../ForthCommands/ForthCommands.html#Run()">Run</a></code>&nbsp;in class&nbsp;<code><a href="../ForthCommands/ForthCommands.html" title="class in ru.nsu.yurakov.Forth.ForthCommands">ForthCommands</a></code></dd>
+<dt>Returns:</dt>
+<dd>true if something was output to out else false</dd>
 <dt>Throws:</dt>
-<dd><code><a href="../ForthRuntimeException/ForthRuntimeException.html" title="class in ru.nsu.yurakov.Forth.ForthRuntimeException">ForthRuntimeException</a></code></dd>
+<dd><code><a href="../ForthRuntimeException/ForthRuntimeException.html" title="class in ru.nsu.yurakov.Forth.ForthRuntimeException">ForthRuntimeException</a></code> - If something went wrong during the execution of the command</dd>
 </dl>
 </section>
 </li>

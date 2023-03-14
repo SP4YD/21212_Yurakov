@@ -1,6 +1,9 @@
 package ru.nsu.yurakov.Forth.LogOperEqually;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.nsu.yurakov.Forth.ForthCommands.ForthCommands;
+import ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter;
 import ru.nsu.yurakov.Forth.ForthRuntimeException.ForthRuntimeException;
 
 /**
@@ -13,6 +16,7 @@ public class LogOperEqually extends ForthCommands {
 
     @Override
     public boolean Run() throws ForthRuntimeException {
+        LOGGER.info("Was launched " + this.getClass().getName());
         int a = 0;
         int b = 0;
         try {
@@ -33,4 +37,6 @@ public class LogOperEqually extends ForthCommands {
 
         return false;
     }
+
+    private static final Logger LOGGER = LogManager.getLogger(LogOperEqually.class);
 }

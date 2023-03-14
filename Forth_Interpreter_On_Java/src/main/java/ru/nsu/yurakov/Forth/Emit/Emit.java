@@ -2,7 +2,10 @@ package ru.nsu.yurakov.Forth.Emit;
 
 import java.util.EmptyStackException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.nsu.yurakov.Forth.ForthCommands.ForthCommands;
+import ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter;
 import ru.nsu.yurakov.Forth.ForthRuntimeException.ForthRuntimeException;
 
 /**
@@ -12,6 +15,7 @@ public class Emit extends ForthCommands{
 
     @Override
     public boolean Run() throws ForthRuntimeException {
+        LOGGER.info("Was launched " + this.getClass().getName());
         try {
             GeneralDataForExecutors.outputFile.print((char)(int)GeneralDataForExecutors.stack.peek() + " ");
             GeneralDataForExecutors.stack.pop ();
@@ -21,4 +25,6 @@ public class Emit extends ForthCommands{
 
         return true;
     }
+
+    private static final Logger LOGGER = LogManager.getLogger(Emit.class);
 }

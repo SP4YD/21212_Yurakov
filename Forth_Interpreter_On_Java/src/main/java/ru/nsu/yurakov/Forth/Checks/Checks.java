@@ -1,7 +1,14 @@
 package ru.nsu.yurakov.Forth.Checks;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter;
+
 import java.math.BigInteger;
 
+/**
+ * Contains various checks
+ */
 public class Checks {
     /** Checks whether this string is a number
      * @param str The string that is being checked
@@ -9,6 +16,8 @@ public class Checks {
      * @throws RuntimeException If the number is greater or less than int
      */
     public static boolean IsNumber(String str) throws RuntimeException {
+        LOGGER.info("Was launched IsNumber(" + str + ")");
+
         BigInteger num;
 
         try {
@@ -23,4 +32,6 @@ public class Checks {
 
         return true;
     }
+
+    private static final Logger LOGGER = LogManager.getLogger(Checks.class);
 }

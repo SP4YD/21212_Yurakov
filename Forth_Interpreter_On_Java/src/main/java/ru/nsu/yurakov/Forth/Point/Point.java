@@ -1,5 +1,7 @@
 package ru.nsu.yurakov.Forth.Point;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.nsu.yurakov.Forth.ForthCommands.ForthCommands;
 import ru.nsu.yurakov.Forth.ForthRuntimeException.ForthRuntimeException;
 
@@ -10,6 +12,7 @@ public class Point extends ForthCommands{
 
     @Override
     public boolean Run() throws ForthRuntimeException {
+        LOGGER.info("Was launched " + this.getClass().getName());
         try {
             GeneralDataForExecutors.outputFile.print(GeneralDataForExecutors.stack.peek() + " ");
             GeneralDataForExecutors.stack.pop();
@@ -19,5 +22,6 @@ public class Point extends ForthCommands{
     
         return true;
     }
-    
+
+    private static final Logger LOGGER = LogManager.getLogger(Point.class);
 }

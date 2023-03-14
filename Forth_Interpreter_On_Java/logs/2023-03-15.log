@@ -1,0 +1,1216 @@
+2023-03-15 01:15:48.613 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:15:48.615 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched RunInterpretation
+2023-03-15 01:15:52.089 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand
+2023-03-15 01:15:55.089 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand
+2023-03-15 01:18:29.992 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:18:29.994 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched RunInterpretation
+2023-03-15 01:18:35.477 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command cr
+2023-03-15 01:18:35.478 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched IsNumber(cr)
+2023-03-15 01:18:35.479 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:18:40.477 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 1
+2023-03-15 01:18:40.477 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched IsNumber(1)
+2023-03-15 01:18:45.478 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 12455
+2023-03-15 01:18:45.478 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched IsNumber(12455)
+2023-03-15 01:34:33.629 [main] INFO  ru.nsu.yurakov.Forth.Main.Main - Was launched main([Ljava.lang.String;@5136d012)
+2023-03-15 01:34:33.631 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:34:33.632 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched RunInterpretation
+2023-03-15 01:34:48.150 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 1 2 3 . cr . cr
+2023-03-15 01:34:48.152 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(1 2 3 . cr . cr)
+2023-03-15 01:34:48.153 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:34:48.153 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:34:48.154 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:34:48.154 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched Factory Constructor
+2023-03-15 01:34:48.155 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:34:48.155 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:34:48.155 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:34:48.156 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:34:48.157 [main] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:34:48.157 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(cr)
+2023-03-15 01:34:48.157 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:34:48.158 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(cr)
+2023-03-15 01:34:48.158 [main] INFO  ru.nsu.yurakov.Forth.Cr.Cr - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:34:48.158 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:34:48.158 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:34:48.158 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:34:48.158 [main] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:34:48.159 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(cr)
+2023-03-15 01:34:48.159 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:34:48.159 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(cr)
+2023-03-15 01:34:48.159 [main] INFO  ru.nsu.yurakov.Forth.Cr.Cr - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:34:52.150 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command .
+2023-03-15 01:34:52.150 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(.)
+2023-03-15 01:34:52.150 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:34:52.150 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:34:52.150 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:34:52.150 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:34:52.151 [main] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:35:16.154 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 5 6 * 5 - 3 + mod 27 .
+2023-03-15 01:35:16.154 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(5 6 * 5 - 3 + mod 27 .)
+2023-03-15 01:35:16.154 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:35:16.155 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:35:16.155 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:35:16.155 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:35:16.155 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:35:16.156 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(6)
+2023-03-15 01:35:16.156 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:35:16.156 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:35:16.156 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:35:16.157 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(*)
+2023-03-15 01:35:16.157 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:35:16.157 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(*)
+2023-03-15 01:35:16.158 [main] INFO  ru.nsu.yurakov.Forth.Mult.Mult - Was launched ru.nsu.yurakov.Forth.Mult.Mult
+2023-03-15 01:35:16.159 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:35:16.159 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:35:16.159 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:35:16.159 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:35:16.159 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(-)
+2023-03-15 01:35:16.160 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:35:16.160 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(-)
+2023-03-15 01:35:16.161 [main] INFO  ru.nsu.yurakov.Forth.Sub.Sub - Was launched ru.nsu.yurakov.Forth.Sub.Sub
+2023-03-15 01:35:16.161 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:35:16.161 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:35:16.162 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:35:16.162 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:35:16.162 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(+)
+2023-03-15 01:35:16.162 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:35:16.162 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:35:16.163 [main] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:35:16.164 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(mod)
+2023-03-15 01:35:16.164 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:35:16.164 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(mod)
+2023-03-15 01:35:16.165 [main] INFO  ru.nsu.yurakov.Forth.Mod.Mod - Was launched ru.nsu.yurakov.Forth.Mod.Mod
+2023-03-15 01:36:13.437 [main] INFO  ru.nsu.yurakov.Forth.Main.Main - Was launched main([Ljava.lang.String;@5136d012)
+2023-03-15 01:36:13.440 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:36:13.440 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched RunInterpretation
+2023-03-15 01:36:20.957 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command  5 6 * 5 - 3 + 27 mod .
+2023-03-15 01:36:20.958 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing( 5 6 * 5 - 3 + 27 mod .)
+2023-03-15 01:36:20.959 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:36:20.960 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber()
+2023-03-15 01:36:20.961 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:20.961 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched Factory Constructor
+2023-03-15 01:36:20.963 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance()
+2023-03-15 01:36:34.958 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command  5 6 * 5 - 3 + mod 27 .
+2023-03-15 01:36:34.958 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing( 5 6 * 5 - 3 + mod 27 .)
+2023-03-15 01:36:34.958 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:36:34.958 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber()
+2023-03-15 01:36:34.958 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:34.959 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance()
+2023-03-15 01:36:39.959 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command .
+2023-03-15 01:36:39.959 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(.)
+2023-03-15 01:36:39.959 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:36:39.959 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:36:39.959 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:39.960 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:36:39.961 [main] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:36:44.959 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 5 6 *
+2023-03-15 01:36:44.960 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(5 6 *)
+2023-03-15 01:36:44.960 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:36:44.960 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:36:44.960 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:44.961 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:36:44.962 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:36:44.962 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(6)
+2023-03-15 01:36:44.962 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:44.962 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:36:44.962 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:36:44.962 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(*)
+2023-03-15 01:36:44.963 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:44.963 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(*)
+2023-03-15 01:36:44.964 [main] INFO  ru.nsu.yurakov.Forth.Mult.Mult - Was launched ru.nsu.yurakov.Forth.Mult.Mult
+2023-03-15 01:36:48.960 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 5 - 3
+2023-03-15 01:36:48.962 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(5 - 3)
+2023-03-15 01:36:48.962 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:36:48.962 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:36:48.963 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:48.963 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:36:48.963 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:36:48.963 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(-)
+2023-03-15 01:36:48.963 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:48.963 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(-)
+2023-03-15 01:36:48.964 [main] INFO  ru.nsu.yurakov.Forth.Sub.Sub - Was launched ru.nsu.yurakov.Forth.Sub.Sub
+2023-03-15 01:36:48.965 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:36:48.965 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:48.965 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:36:48.965 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:36:54.961 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command +
+2023-03-15 01:36:54.961 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(+)
+2023-03-15 01:36:54.962 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:36:54.962 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(+)
+2023-03-15 01:36:54.962 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:36:54.962 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:36:54.964 [main] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:37:07.963 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 27
+2023-03-15 01:37:07.963 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(27)
+2023-03-15 01:37:07.963 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:37:07.963 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(27)
+2023-03-15 01:37:07.963 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:07.963 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:37:07.963 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:37:09.963 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command mod
+2023-03-15 01:37:09.964 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(mod)
+2023-03-15 01:37:09.964 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:37:09.964 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(mod)
+2023-03-15 01:37:09.964 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:09.964 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(mod)
+2023-03-15 01:37:09.965 [main] INFO  ru.nsu.yurakov.Forth.Mod.Mod - Was launched ru.nsu.yurakov.Forth.Mod.Mod
+2023-03-15 01:37:12.963 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command .
+2023-03-15 01:37:12.964 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(.)
+2023-03-15 01:37:12.964 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:37:12.964 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:37:12.964 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:12.964 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:37:12.964 [main] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:37:21.964 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 5 6 * 5 - 3 + 27 mod .
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(5 6 * 5 - 3 + 27 mod .)
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(6)
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(*)
+2023-03-15 01:37:21.965 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(*)
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Mult.Mult - Was launched ru.nsu.yurakov.Forth.Mult.Mult
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(-)
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(-)
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Sub.Sub - Was launched ru.nsu.yurakov.Forth.Sub.Sub
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.966 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(+)
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(27)
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(mod)
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(mod)
+2023-03-15 01:37:21.967 [main] INFO  ru.nsu.yurakov.Forth.Mod.Mod - Was launched ru.nsu.yurakov.Forth.Mod.Mod
+2023-03-15 01:37:21.968 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:37:21.968 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:21.968 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:37:21.968 [main] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:37:54.969 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 1 if ." Yep" else ." No" then ;
+2023-03-15 01:37:54.969 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(1 if ." Yep" else ." No" then ;)
+2023-03-15 01:37:54.969 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:37:54.970 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:37:54.971 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:37:54.971 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:54.971 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:37:54.971 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:37:54.971 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(if)
+2023-03-15 01:37:54.971 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:54.972 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(if)
+2023-03-15 01:37:54.973 [main] INFO  ru.nsu.yurakov.Forth.OperatorIf.OperatorIf - Was launched ru.nsu.yurakov.Forth.OperatorIf.OperatorIf<if ." Yep" else ." No" then ;>
+2023-03-15 01:37:54.974 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command ." Yep"
+2023-03-15 01:37:54.974 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(." Yep")
+2023-03-15 01:37:54.975 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:37:54.975 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:37:54.975 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:37:54.975 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:37:54.977 [main] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." Yep">
+2023-03-15 01:39:50.201 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:50.202 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.202 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 2147483648
+2023-03-15 01:39:50.203 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(2147483648)
+2023-03-15 01:39:50.203 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.204 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2147483648)
+2023-03-15 01:39:50.207 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.207 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command -2147483649
+2023-03-15 01:39:50.207 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(-2147483649)
+2023-03-15 01:39:50.207 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.207 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(-2147483649)
+2023-03-15 01:39:50.217 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:50.217 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.217 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 100 200 . cr .
+2023-03-15 01:39:50.217 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(100 200 . cr .)
+2023-03-15 01:39:50.217 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.217 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(100)
+2023-03-15 01:39:50.218 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.218 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched Factory Constructor
+2023-03-15 01:39:50.218 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.219 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.219 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(200)
+2023-03-15 01:39:50.219 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.219 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.219 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.219 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.219 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.219 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.220 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.220 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(cr)
+2023-03-15 01:39:50.220 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.220 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(cr)
+2023-03-15 01:39:50.221 [Test worker] INFO  ru.nsu.yurakov.Forth.Cr.Cr - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:39:50.221 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.221 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.221 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.221 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.224 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.224 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.224 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(/)
+2023-03-15 01:39:50.225 [Test worker] INFO  ru.nsu.yurakov.Forth.Division.Division - Was launched ru.nsu.yurakov.Forth.Division.Division
+2023-03-15 01:39:50.226 [Test worker] INFO  ru.nsu.yurakov.Forth.Division.Division - Was launched ru.nsu.yurakov.Forth.Division.Division
+2023-03-15 01:39:50.227 [Test worker] INFO  ru.nsu.yurakov.Forth.Division.Division - Was launched ru.nsu.yurakov.Forth.Division.Division
+2023-03-15 01:39:50.227 [Test worker] INFO  ru.nsu.yurakov.Forth.Division.Division - Was launched ru.nsu.yurakov.Forth.Division.Division
+2023-03-15 01:39:50.227 [Test worker] INFO  ru.nsu.yurakov.Forth.Division.Division - Was launched ru.nsu.yurakov.Forth.Division.Division
+2023-03-15 01:39:50.227 [Test worker] INFO  ru.nsu.yurakov.Forth.Division.Division - Was launched ru.nsu.yurakov.Forth.Division.Division
+2023-03-15 01:39:50.228 [Test worker] INFO  ru.nsu.yurakov.Forth.Division.Division - Was launched ru.nsu.yurakov.Forth.Division.Division
+2023-03-15 01:39:50.231 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.232 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.232 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(drop)
+2023-03-15 01:39:50.233 [Test worker] INFO  ru.nsu.yurakov.Forth.Drop.Drop - Was launched ru.nsu.yurakov.Forth.Drop.Drop
+2023-03-15 01:39:50.233 [Test worker] INFO  ru.nsu.yurakov.Forth.Drop.Drop - Was launched ru.nsu.yurakov.Forth.Drop.Drop
+2023-03-15 01:39:50.233 [Test worker] INFO  ru.nsu.yurakov.Forth.Drop.Drop - Was launched ru.nsu.yurakov.Forth.Drop.Drop
+2023-03-15 01:39:50.237 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.237 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.237 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(dup)
+2023-03-15 01:39:50.238 [Test worker] INFO  ru.nsu.yurakov.Forth.Dup.Dup - Was launched ru.nsu.yurakov.Forth.Dup.Dup
+2023-03-15 01:39:50.238 [Test worker] INFO  ru.nsu.yurakov.Forth.Dup.Dup - Was launched ru.nsu.yurakov.Forth.Dup.Dup
+2023-03-15 01:39:50.239 [Test worker] INFO  ru.nsu.yurakov.Forth.Dup.Dup - Was launched ru.nsu.yurakov.Forth.Dup.Dup
+2023-03-15 01:39:50.242 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:50.242 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.242 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 65 66 67 emit emit emit
+2023-03-15 01:39:50.242 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(65 66 67 emit emit emit)
+2023-03-15 01:39:50.242 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.242 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(65)
+2023-03-15 01:39:50.242 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.242 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(66)
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(67)
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(emit)
+2023-03-15 01:39:50.243 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.244 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(emit)
+2023-03-15 01:39:50.244 [Test worker] INFO  ru.nsu.yurakov.Forth.Emit.Emit - Was launched ru.nsu.yurakov.Forth.Emit.Emit
+2023-03-15 01:39:50.245 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(emit)
+2023-03-15 01:39:50.245 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.245 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(emit)
+2023-03-15 01:39:50.245 [Test worker] INFO  ru.nsu.yurakov.Forth.Emit.Emit - Was launched ru.nsu.yurakov.Forth.Emit.Emit
+2023-03-15 01:39:50.245 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(emit)
+2023-03-15 01:39:50.245 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.245 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(emit)
+2023-03-15 01:39:50.245 [Test worker] INFO  ru.nsu.yurakov.Forth.Emit.Emit - Was launched ru.nsu.yurakov.Forth.Emit.Emit
+2023-03-15 01:39:50.245 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.246 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command emit
+2023-03-15 01:39:50.246 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(emit)
+2023-03-15 01:39:50.246 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.246 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(emit)
+2023-03-15 01:39:50.246 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.246 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(emit)
+2023-03-15 01:39:50.246 [Test worker] INFO  ru.nsu.yurakov.Forth.Emit.Emit - Was launched ru.nsu.yurakov.Forth.Emit.Emit
+2023-03-15 01:39:50.249 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:50.249 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.249 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command moda
+2023-03-15 01:39:50.250 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(moda)
+2023-03-15 01:39:50.250 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.250 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(moda)
+2023-03-15 01:39:50.250 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.250 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(moda)
+2023-03-15 01:39:50.250 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.250 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command sdfsdg
+2023-03-15 01:39:50.250 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(sdfsdg)
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(sdfsdg)
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(sdfsdg)
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command ifa
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(ifa)
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(ifa)
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.251 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(ifa)
+2023-03-15 01:39:50.255 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.255 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.255 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(=)
+2023-03-15 01:39:50.256 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperEqually.LogOperEqually - Was launched ru.nsu.yurakov.Forth.LogOperEqually.LogOperEqually
+2023-03-15 01:39:50.256 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperEqually.LogOperEqually - Was launched ru.nsu.yurakov.Forth.LogOperEqually.LogOperEqually
+2023-03-15 01:39:50.256 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperEqually.LogOperEqually - Was launched ru.nsu.yurakov.Forth.LogOperEqually.LogOperEqually
+2023-03-15 01:39:50.257 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperEqually.LogOperEqually - Was launched ru.nsu.yurakov.Forth.LogOperEqually.LogOperEqually
+2023-03-15 01:39:50.260 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.260 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.261 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(<)
+2023-03-15 01:39:50.262 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperLess.LogOperLess - Was launched ru.nsu.yurakov.Forth.LogOperLess.LogOperLess
+2023-03-15 01:39:50.262 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperLess.LogOperLess - Was launched ru.nsu.yurakov.Forth.LogOperLess.LogOperLess
+2023-03-15 01:39:50.262 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperLess.LogOperLess - Was launched ru.nsu.yurakov.Forth.LogOperLess.LogOperLess
+2023-03-15 01:39:50.263 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperLess.LogOperLess - Was launched ru.nsu.yurakov.Forth.LogOperLess.LogOperLess
+2023-03-15 01:39:50.266 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.266 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.266 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(>)
+2023-03-15 01:39:50.267 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperMore.LogOperMore - Was launched ru.nsu.yurakov.Forth.LogOperMore.LogOperMore
+2023-03-15 01:39:50.267 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperMore.LogOperMore - Was launched ru.nsu.yurakov.Forth.LogOperMore.LogOperMore
+2023-03-15 01:39:50.267 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperMore.LogOperMore - Was launched ru.nsu.yurakov.Forth.LogOperMore.LogOperMore
+2023-03-15 01:39:50.268 [Test worker] INFO  ru.nsu.yurakov.Forth.LogOperMore.LogOperMore - Was launched ru.nsu.yurakov.Forth.LogOperMore.LogOperMore
+2023-03-15 01:39:50.271 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.271 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.271 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(mod)
+2023-03-15 01:39:50.272 [Test worker] INFO  ru.nsu.yurakov.Forth.Mod.Mod - Was launched ru.nsu.yurakov.Forth.Mod.Mod
+2023-03-15 01:39:50.273 [Test worker] INFO  ru.nsu.yurakov.Forth.Mod.Mod - Was launched ru.nsu.yurakov.Forth.Mod.Mod
+2023-03-15 01:39:50.273 [Test worker] INFO  ru.nsu.yurakov.Forth.Mod.Mod - Was launched ru.nsu.yurakov.Forth.Mod.Mod
+2023-03-15 01:39:50.273 [Test worker] INFO  ru.nsu.yurakov.Forth.Mod.Mod - Was launched ru.nsu.yurakov.Forth.Mod.Mod
+2023-03-15 01:39:50.274 [Test worker] INFO  ru.nsu.yurakov.Forth.Mod.Mod - Was launched ru.nsu.yurakov.Forth.Mod.Mod
+2023-03-15 01:39:50.277 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.277 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.277 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(*)
+2023-03-15 01:39:50.278 [Test worker] INFO  ru.nsu.yurakov.Forth.Mult.Mult - Was launched ru.nsu.yurakov.Forth.Mult.Mult
+2023-03-15 01:39:50.278 [Test worker] INFO  ru.nsu.yurakov.Forth.Mult.Mult - Was launched ru.nsu.yurakov.Forth.Mult.Mult
+2023-03-15 01:39:50.279 [Test worker] INFO  ru.nsu.yurakov.Forth.Mult.Mult - Was launched ru.nsu.yurakov.Forth.Mult.Mult
+2023-03-15 01:39:50.279 [Test worker] INFO  ru.nsu.yurakov.Forth.Mult.Mult - Was launched ru.nsu.yurakov.Forth.Mult.Mult
+2023-03-15 01:39:50.279 [Test worker] INFO  ru.nsu.yurakov.Forth.Mult.Mult - Was launched ru.nsu.yurakov.Forth.Mult.Mult
+2023-03-15 01:39:50.279 [Test worker] INFO  ru.nsu.yurakov.Forth.Mult.Mult - Was launched ru.nsu.yurakov.Forth.Mult.Mult
+2023-03-15 01:39:50.282 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:50.282 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.282 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 10 0 do i . loop ;
+2023-03-15 01:39:50.282 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(10 0 do i . loop ;)
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(10)
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.283 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.284 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.284 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.284 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.285 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i . loop ;>
+2023-03-15 01:39:50.285 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 . 1 . 2 . 3 . 4 . 5 . 6 . 7 . 8 . 9 .
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 . 1 . 2 . 3 . 4 . 5 . 6 . 7 . 8 . 9 .)
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.286 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.287 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(4)
+2023-03-15 01:39:50.288 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.289 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.290 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.290 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.290 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(6)
+2023-03-15 01:39:50.290 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.290 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.290 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.290 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.290 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.290 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(7)
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(8)
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.291 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(9)
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.292 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 do i . loop ;
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 do i . loop ;)
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.293 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i . loop ;>
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command do i . loop ;
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(do i . loop ;)
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.294 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i . loop ;>
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 6 0 do i 1 + 0 do i . loop ; cr loop ;
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(6 0 do i 1 + 0 do i . loop ; cr loop ;)
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(6)
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.295 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i 1 + 0 do i . loop ; cr loop ;>
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 1 + 0 do i . loop ; cr 1 1 + 0 do i . loop ; cr 2 1 + 0 do i . loop ; cr 3 1 + 0 do i . loop ; cr 4 1 + 0 do i . loop ; cr 5 1 + 0 do i . loop ; cr
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 1 + 0 do i . loop ; cr 1 1 + 0 do i . loop ; cr 2 1 + 0 do i . loop ; cr 3 1 + 0 do i . loop ; cr 4 1 + 0 do i . loop ; cr 5 1 + 0 do i . loop ; cr)
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.296 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(+)
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.297 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:39:50.298 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.298 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.298 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.298 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.298 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.298 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i . loop ;>
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 .
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 .)
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.299 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(cr)
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(cr)
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Cr.Cr - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(+)
+2023-03-15 01:39:50.300 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i . loop ;>
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 . 1 .
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 . 1 .)
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.301 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.302 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(cr)
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(cr)
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Cr.Cr - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.303 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(+)
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i . loop ;>
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 . 1 . 2 .
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 . 1 . 2 .)
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.304 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.305 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.305 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.305 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.305 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.305 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.305 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.305 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.306 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(cr)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(cr)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Cr.Cr - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(+)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.307 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i . loop ;>
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 . 1 . 2 . 3 .
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 . 1 . 2 . 3 .)
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.308 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:39:50.309 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(cr)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(cr)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Cr.Cr - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(4)
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.310 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(+)
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.311 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i . loop ;>
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 . 1 . 2 . 3 . 4 .
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 . 1 . 2 . 3 . 4 .)
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.312 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(4)
+2023-03-15 01:39:50.313 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(cr)
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(cr)
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Cr.Cr - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.314 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(+)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(do)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(do)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop - Was launched ru.nsu.yurakov.Forth.OperatorDoLoop.OperatorDoLoop <do i . loop ;>
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 . 1 . 2 . 3 . 4 . 5 .
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 . 1 . 2 . 3 . 4 . 5 .)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.315 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.316 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(4)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(cr)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(cr)
+2023-03-15 01:39:50.317 [Test worker] INFO  ru.nsu.yurakov.Forth.Cr.Cr - Was launched ru.nsu.yurakov.Forth.Cr.Cr
+2023-03-15 01:39:50.320 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:50.320 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.320 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 1 if ." Yes" then ; ." No"
+2023-03-15 01:39:50.320 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(1 if ." Yes" then ; ." No")
+2023-03-15 01:39:50.320 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.320 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.321 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.321 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.321 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.321 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.321 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(if)
+2023-03-15 01:39:50.321 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.321 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(if)
+2023-03-15 01:39:50.322 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorIf.OperatorIf - Was launched ru.nsu.yurakov.Forth.OperatorIf.OperatorIf <if ." Yes" then ;>
+2023-03-15 01:39:50.322 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command ." Yes"
+2023-03-15 01:39:50.322 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(." Yes")
+2023-03-15 01:39:50.322 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.322 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.322 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.322 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." Yes">
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." No">
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if ." Yes" then ; ." No"
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if ." Yes" then ; ." No")
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.323 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(if)
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(if)
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorIf.OperatorIf - Was launched ru.nsu.yurakov.Forth.OperatorIf.OperatorIf <if ." Yes" then ;>
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." No">
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 1 if ." Yes" else ." No" then ;
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(1 if ." Yes" else ." No" then ;)
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(if)
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(if)
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorIf.OperatorIf - Was launched ru.nsu.yurakov.Forth.OperatorIf.OperatorIf <if ." Yes" else ." No" then ;>
+2023-03-15 01:39:50.324 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command ." Yes"
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(." Yes")
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." Yes">
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if ." Yes" else ." No" then ;
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if ." Yes" else ." No" then ;)
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(0)
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(if)
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(if)
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorIf.OperatorIf - Was launched ru.nsu.yurakov.Forth.OperatorIf.OperatorIf <if ." Yes" else ." No" then ;>
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command ." No"
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(." No")
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.325 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." No">
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command if ." Yes" else ." No" then ;
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(if ." Yes" else ." No" then ;)
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(if)
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(if)
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorIf.OperatorIf - Was launched ru.nsu.yurakov.Forth.OperatorIf.OperatorIf <if ." Yes" else ." No" then ;>
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 1 if 2 . 3 if 4 . 5 . else 0 . then ; then ;
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(1 if 2 . 3 if 4 . 5 . else 0 . then ; then ;)
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(if)
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(if)
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorIf.OperatorIf - Was launched ru.nsu.yurakov.Forth.OperatorIf.OperatorIf <if 2 . 3 if 4 . 5 . else 0 . then ; then ;>
+2023-03-15 01:39:50.326 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 2 . 3 if 4 . 5 . else 0 . then ;
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(2 . 3 if 4 . 5 . else 0 . then ;)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(if)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(if)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.OperatorIf.OperatorIf - Was launched ru.nsu.yurakov.Forth.OperatorIf.OperatorIf <if 4 . 5 . else 0 . then ;>
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 4 . 5 .
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(4 . 5 .)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(4)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.327 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.328 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.330 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.330 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.330 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(over)
+2023-03-15 01:39:50.331 [Test worker] INFO  ru.nsu.yurakov.Forth.Over.Over - Was launched ru.nsu.yurakov.Forth.Over.Over
+2023-03-15 01:39:50.331 [Test worker] INFO  ru.nsu.yurakov.Forth.Over.Over - Was launched ru.nsu.yurakov.Forth.Over.Over
+2023-03-15 01:39:50.332 [Test worker] INFO  ru.nsu.yurakov.Forth.Over.Over - Was launched ru.nsu.yurakov.Forth.Over.Over
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 10 0 do i . loop loop ;
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(10 0 do i . loop loop ;)
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 10 0 do i . loop
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(10 0 do i . loop)
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 10 0 do i . ;
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(10 0 do i . ;)
+2023-03-15 01:39:50.334 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 10 0 do do i . loop ;
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(10 0 do do i . loop ;)
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 10 0 do i .
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(10 0 do i .)
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingDo
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if 1 . else 0 . then then ;
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if 1 . else 0 . then then ;)
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if 1 . else else 0 . then ;
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if 1 . else else 0 . then ;)
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if 1 . else 0 . then else ;
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if 1 . else 0 . then else ;)
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if if 1 . else 0 . then ;
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if if 1 . else 0 . then ;)
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.335 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if 1 . else if 0 . then ;
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if 1 . else if 0 . then ;)
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if 1 . else 0 . ;
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if 1 . else 0 . ;)
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if 1 . else 0 . then
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if 1 . else 0 . then)
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 0 if 1 . else 0 .
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(0 if 1 . else 0 .)
+2023-03-15 01:39:50.336 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched ParsingIf
+2023-03-15 01:39:50.338 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.338 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.338 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(+)
+2023-03-15 01:39:50.338 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.339 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.340 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.340 [Test worker] INFO  ru.nsu.yurakov.Forth.Plus.Plus - Was launched ru.nsu.yurakov.Forth.Plus.Plus
+2023-03-15 01:39:50.342 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:50.342 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.342 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 1 2 3 4 5 . .
+2023-03-15 01:39:50.342 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(1 2 3 4 5 . .)
+2023-03-15 01:39:50.342 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.342 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:50.342 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.342 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.342 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(4)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(5)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command .
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(.)
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.343 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:50.344 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.344 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:50.344 [Test worker] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:50.345 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command ." Hello World"
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(." Hello World")
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." Hello World">
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command ." "
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(." ")
+2023-03-15 01:39:50.346 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." ">
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command ." Hello"World"
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(." Hello"World")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." Hello"World">
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretString
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command ." Hello" ." World"
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(." Hello" ." World")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." Hello">
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.")
+2023-03-15 01:39:50.347 [Test worker] INFO  ru.nsu.yurakov.Forth.PrintingLine.PrintingLine - Was launched ru.nsu.yurakov.Forth.PrintingLine.PrintingLine <." World">
+2023-03-15 01:39:50.349 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.349 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.350 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:50.350 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.350 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.350 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.350 [Test worker] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:50.352 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.352 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.352 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(rot)
+2023-03-15 01:39:50.352 [Test worker] INFO  ru.nsu.yurakov.Forth.Rot.Rot - Was launched ru.nsu.yurakov.Forth.Rot.Rot
+2023-03-15 01:39:50.353 [Test worker] INFO  ru.nsu.yurakov.Forth.Rot.Rot - Was launched ru.nsu.yurakov.Forth.Rot.Rot
+2023-03-15 01:39:50.353 [Test worker] INFO  ru.nsu.yurakov.Forth.Rot.Rot - Was launched ru.nsu.yurakov.Forth.Rot.Rot
+2023-03-15 01:39:50.353 [Test worker] INFO  ru.nsu.yurakov.Forth.Rot.Rot - Was launched ru.nsu.yurakov.Forth.Rot.Rot
+2023-03-15 01:39:50.355 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.355 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.356 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(-)
+2023-03-15 01:39:50.356 [Test worker] INFO  ru.nsu.yurakov.Forth.Sub.Sub - Was launched ru.nsu.yurakov.Forth.Sub.Sub
+2023-03-15 01:39:50.356 [Test worker] INFO  ru.nsu.yurakov.Forth.Sub.Sub - Was launched ru.nsu.yurakov.Forth.Sub.Sub
+2023-03-15 01:39:50.357 [Test worker] INFO  ru.nsu.yurakov.Forth.Sub.Sub - Was launched ru.nsu.yurakov.Forth.Sub.Sub
+2023-03-15 01:39:50.357 [Test worker] INFO  ru.nsu.yurakov.Forth.Sub.Sub - Was launched ru.nsu.yurakov.Forth.Sub.Sub
+2023-03-15 01:39:50.359 [Test worker] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:50.359 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:50.359 [Test worker] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(swap)
+2023-03-15 01:39:50.359 [Test worker] INFO  ru.nsu.yurakov.Forth.Swap.Swap - Was launched ru.nsu.yurakov.Forth.Swap.Swap
+2023-03-15 01:39:50.360 [Test worker] INFO  ru.nsu.yurakov.Forth.Swap.Swap - Was launched ru.nsu.yurakov.Forth.Swap.Swap
+2023-03-15 01:39:50.360 [Test worker] INFO  ru.nsu.yurakov.Forth.Swap.Swap - Was launched ru.nsu.yurakov.Forth.Swap.Swap
+2023-03-15 01:39:53.330 [main] INFO  ru.nsu.yurakov.Forth.Main.Main - Was launched main([Ljava.lang.String;@5136d012)
+2023-03-15 01:39:53.332 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched ForthInterpreter
+2023-03-15 01:39:53.332 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched RunInterpretation
+2023-03-15 01:39:56.737 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command 1 2 3
+2023-03-15 01:39:56.739 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(1 2 3)
+2023-03-15 01:39:56.740 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:56.741 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(1)
+2023-03-15 01:39:56.742 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:56.742 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched Factory Constructor
+2023-03-15 01:39:56.742 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:56.743 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:56.743 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(2)
+2023-03-15 01:39:56.743 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:56.743 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:56.743 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:56.743 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(3)
+2023-03-15 01:39:56.743 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:56.743 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(push)
+2023-03-15 01:39:56.743 [main] INFO  ru.nsu.yurakov.Forth.Push.Push - Was launched ru.nsu.yurakov.Forth.Push.Push
+2023-03-15 01:39:58.736 [main] INFO  ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter - Was launched InterpretCommand with command . . .
+2023-03-15 01:39:58.736 [main] INFO  ru.nsu.yurakov.Forth.Parser.Parser - Was launched Parsing(. . .)
+2023-03-15 01:39:58.736 [main] INFO  ru.nsu.yurakov.Forth.GeneralData.GeneralData - Was launched GeneralData Constructor
+2023-03-15 01:39:58.737 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:58.737 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:58.737 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:58.738 [main] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:58.739 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:58.739 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:58.739 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:58.740 [main] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point
+2023-03-15 01:39:58.740 [main] INFO  ru.nsu.yurakov.Forth.Checks.Checks - Was launched IsNumber(.)
+2023-03-15 01:39:58.740 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched GetFactory
+2023-03-15 01:39:58.740 [main] INFO  ru.nsu.yurakov.Forth.Factory.Factory - Was launched CreateInstance(.)
+2023-03-15 01:39:58.740 [main] INFO  ru.nsu.yurakov.Forth.Point.Point - Was launched ru.nsu.yurakov.Forth.Point.Point

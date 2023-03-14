@@ -1,5 +1,7 @@
 package ru.nsu.yurakov.Forth.Main;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import ru.nsu.yurakov.Forth.ForthInterpreter.ForthInterpreter;
 
 import java.io.FileInputStream;
@@ -9,6 +11,7 @@ import java.io.PrintStream;
 
 public class Main {
     public static void main(String[] args) {
+        LOGGER.info("Was launched main(" + args + ")");
         InputStream inputFile = System.in;
         PrintStream outputFile = System.out;
 
@@ -36,4 +39,6 @@ public class Main {
         ForthInterpreter interpreter = new ForthInterpreter(inputFile, outputFile);
         interpreter.RunInterpretation();
     }
+
+    private static final Logger LOGGER = LogManager.getLogger(Main.class);
 }
