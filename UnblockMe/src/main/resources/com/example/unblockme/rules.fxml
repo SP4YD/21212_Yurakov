@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="266.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/17">
+   <children>
+      <Label alignment="TOP_LEFT" layoutY="8.0" prefHeight="335.0" prefWidth="289.0" text="Unblock Me - это головоломка, цель которой - переместить красный блок за правую стенку. На поле есть другие блоки, которые блокируют перемещение красного блока. Чтобы переместить красный блок, вы должны сдвинуть другие блоки в сторону, чтобы освободить место. Основная сложность в том, что блоки не могут проходить сквозь друг друга, и горизонтальные блоки двигаются только по горизонтали, а вертикальные только по вертикали" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
