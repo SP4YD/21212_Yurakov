@@ -12,8 +12,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public abstract class Message {
-    private static final String PATH_TO_READ = "./Files/"; //   "./src/main/resources/DistributedFiles/"
-    private static final String PATH_TO_WRITE = "./Files/"; //"./src/main/resources/UploadedFiles/"
+    private static final String PATH_TO_READ = "./Files/";
+    private static final String PATH_TO_WRITE = "./Files/";
     int len;
     byte type;
     public abstract ByteBuffer ToByteBuffer();
@@ -36,10 +36,12 @@ public abstract class Message {
         return null;
     }
 
-    public static void SendMessage(Message msg, SocketChannel channel) {
+    public static void SendMessage(Message msg, SocketChannel channel)  {
         ByteBuffer buf = msg.ToByteBuffer();
         buf.flip();
-        //System.out.println("SendMessage - " + Arrays.toString(buf.array()));
+        if (msg.type == 7) {
+            System.out.println("Send Piece #" + ((Piece)msg).getIndex());
+        }
 
         while (buf.hasRemaining()) {
             try {
@@ -59,8 +61,9 @@ public abstract class Message {
     public static Message RecvMessage(SocketChannel channel) throws IOException {
         ByteBuffer lenBuf = ByteBuffer.allocate(4);
         while (lenBuf.hasRemaining()) {
-            channel.read(lenBuf);
-            //System.out.println("RecvMessage - " + Arrays.toString(lenBuf.array()));
+            if (channel.read(lenBuf) == -1) {
+                throw new IOException();
+            }
         }
         lenBuf.flip();
 
@@ -138,7 +141,7 @@ public abstract class Message {
                 }
             }
         } catch (NoSuchAlgorithmException e) {
-            throw new RuntimeException(e);
+            System.err.println("Error in Piece Verification");
         }
 
         return true;

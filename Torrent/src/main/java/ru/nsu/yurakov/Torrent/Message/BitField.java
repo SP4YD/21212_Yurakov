@@ -19,22 +19,14 @@ public class BitField extends Message {
         buf.put(getType());
         buf.put(bitSet.toByteArray());
 
-//        System.out.println("[0] = " + bitSet.get(0));
-//        System.out.println("[1] = " + bitSet.get(1));
-
         return buf;
     }
 
     public static Message FromByteBuffer(ByteBuffer buffer, int length) {
         byte[] buf = new byte[length - 1];
         buffer.get(buf);
-        BitField bitField = new BitField(BitSet.valueOf(buf));
 
-//        System.out.println("Устанавливаем битполе: " + Arrays.toString(bitField.bitSet.toByteArray()));
-//        System.out.println("[0] = " + bitField.bitSet.get(0));
-//        System.out.println("[1] = " + bitField.bitSet.get(1));
-
-        return bitField;
+        return new BitField(BitSet.valueOf(buf));
     }
 
     public BitSet getBitSet() {

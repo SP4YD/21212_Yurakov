@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
         Thread serv = new Thread(() -> {
             try {
-                Server server = new Server();
+                Server server = new Server(args[0]);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

@@ -7,10 +7,10 @@ public class Request extends Message {
     int offset;
     int size;
 
-    public Request(int index, int offset, int size) {
+    public Request(int index, int offset, long size) {
         this.index = index;
         this.offset = offset;
-        this.size = size;
+        this.size = (int) size;
         this.len = 1 + 4 + 4 + 4;
         this.type = 6;
     }
@@ -35,5 +35,9 @@ public class Request extends Message {
         req.len = length;
 
         return req;
+    }
+
+    public int getIndex() {
+        return index;
     }
 }

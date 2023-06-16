@@ -19,10 +19,6 @@ public class Peer {
         SENT_HANDSHAKE,
         HANDSHAKE_RECEIVED,
         WAITING_FOR_BITSET,
-        WAITING_FOR_REQUEST,
-        NEED_TO_MAKE_REQUEST,
-        NEED_TO_SEND_PIECE,
-        WAITING_FOR_PIECE,
         SENDING_FILE,
         RECEIVING_FILE
     }
@@ -43,6 +39,8 @@ public class Peer {
     public BitSet getBitSet() {
         return bitSet;
     }
+
+    public int getCountRequests() { return CountRequests; }
 
     public void setBitSet(BitSet bitSet) {
         this.bitSet = bitSet;

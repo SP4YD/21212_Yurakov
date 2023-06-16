@@ -1,6 +1,7 @@
 package ru.nsu.yurakov.Torrent.PiecesManager;
 
 import ru.nsu.yurakov.Torrent.ParserTorrent.TorrentInfo;
+import ru.nsu.yurakov.Torrent.Peer.Peer;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,11 +17,9 @@ public class PiecesManager {
         this.file = file;
         this.info = info;
 
-        sizePiece = (int) min(info.sizeFile, info.sizePiece);
+        sizePiece = min(info.sizeFile, info.sizePiece);
         countPieces = (int) Math.ceil((double)info.sizeFile / info.sizePiece);
-        sizeLastPiece = (int) (info.sizeFile - (countPieces - 1) * info.sizePiece);
-//        System.out.println("sizeLastPiece - " + sizeLastPiece);
-//        System.out.println("countPieces - " + countPieces);
+        sizeLastPiece = (info.sizeFile - (countPieces - 1) * info.sizePiece);
 
         CheckingFile();
     }
@@ -30,11 +29,10 @@ public class PiecesManager {
             file.createNewFile();
         }
         try (FileInputStream fileInputStream = new FileInputStream(file)) {
-            byte[] buffer = new byte[sizePiece];
+            byte[] buffer = new byte[(int) sizePiece];
             sizeBitSet = countPieces;
             whatHave = new BitSet(sizeBitSet);
             for (int i = 0; i < sizeBitSet - 1; ++i) {
-                //System.out.println("sizePiece = " + sizePiece);
                 fileInputStream.read(buffer);
 
                 MessageDigest md = MessageDigest.getInstance("SHA-1");
@@ -43,19 +41,13 @@ public class PiecesManager {
                 whatHave.set(i);
                 for (int j = 0; j < 20; ++j) {
                     if (realHash[j] != info.pieces[i * 20 + j]) {
-                        //System.out.println("Hash куска №" + i + " не совпал");
                         whatHave.clear(i);
                         break;
                     }
                 }
-
-//                System.out.println("Size = " + getWhatHave().length());
-//                System.out.println("До [0] = " + getWhatHave().get(0));
-//                System.out.println("До [1] = " + getWhatHave().get(1));
-                //System.out.println(i + " кусок = " + whatHave.get(i));
             }
 
-            buffer = new byte[sizeLastPiece];
+            buffer = new byte[(int) sizeLastPiece];
             fileInputStream.read(buffer);
 
             MessageDigest md = MessageDigest.getInstance("SHA-1");
@@ -64,7 +56,6 @@ public class PiecesManager {
             whatHave.set(index);
             for (int j = 0; j < 20; ++j) {
                 if (realHash[j] != info.pieces[index * 20 + j]) {
-                    //System.out.println("Hash куска №" + index + " не совпал");
                     whatHave.clear(index);
                     break;
                 }
@@ -76,10 +67,10 @@ public class PiecesManager {
 
     public void setPieceReceived(int index) {
         whatHave.set(index);
-        //System.out.println("bitSet[" + index + "] = " + whatHave.get(index));
     }
 
-    public int getIndexPiece() {
+    public int getIndexPiece(Peer peer) {
+        BitSet bitSetChannel = peer.getBitSet();
         for (int i = 0; i < sizeBitSet; ++i) {
             if (!whatHave.get(i) && bitSetChannel.get(i)) {
                 return i;
@@ -92,7 +83,6 @@ public class PiecesManager {
     public boolean isFileUploaded() {
         for (int i = 0; i < sizeBitSet; ++i) {
             if (!whatHave.get(i)) {
-//                System.out.println("Client: Нет куска - " + i);
                 return false;
             }
         }
@@ -100,7 +90,18 @@ public class PiecesManager {
         return true;
     }
 
-    public int getSizePiece(int index) {
+    public int alreadyDownloaded() {
+        int count = 0;
+        for (int i = 0; i < sizeBitSet; ++i) {
+            if (whatHave.get(i)) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    public long getSizePiece(int index) {
         if (index != countPieces - 1) {
             return sizePiece;
         } else {
@@ -108,16 +109,14 @@ public class PiecesManager {
         }
     }
 
-    public void setBitSetChannel(BitSet bitSetChannel) { this.bitSetChannel = bitSetChannel; }
 
     public BitSet getWhatHave() { return whatHave; }
 
     public int getCountPieces() { return countPieces; }
 
-    private BitSet bitSetChannel;
     private int sizeBitSet;
-    private int sizePiece;
-    private int sizeLastPiece;
+    private long sizePiece;
+    private long sizeLastPiece;
     private int countPieces;
     private BitSet whatHave;
     private TorrentInfo info;

@@ -111,7 +111,7 @@ public class HandShake {
     }
 
     private static String FindTorrentFile(byte[] handshakeHash) {
-        String path = "./TorrentFiles"; //"./src/main/resources/TorrentFiles"
+        String path = "./TorrentFiles";
         File folder = new File(path);
 
         if (folder.exists() && folder.isDirectory()) {
